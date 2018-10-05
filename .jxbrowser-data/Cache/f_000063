@@ -1,0 +1,677 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxkmNPGD3l9l4&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "README.html",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxkmNPGD3l9l4",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxkmNPGD3l9l4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.html",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxbKmX-TvQqUo&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "Board.html",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxbKmX-TvQqUo",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxbKmX-TvQqUo?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.html",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.html",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxGmDzT_4eaww&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "overview.rov.json",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxGmDzT_4eaww",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxGmDzT_4eaww?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.json",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxIe19rB8AuLc&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "main_tirtos.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxIe19rB8AuLc",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxIe19rB8AuLc?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "main_tirtos.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxIiLWTTOt1oM&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "MSP_EXP432P401R_TIRTOS.cmd",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxIiLWTTOt1oM",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxIiLWTTOt1oM?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.cmd",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "MSP_EXP432P401R_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxR0LMzo6Vl-M&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "MSP_EXP432P401R.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxR0LMzo6Vl-M",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxR0LMzo6Vl-M?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "MSP_EXP432P401R.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxsilKby2Nzj0&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "README.md",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxsilKby2Nzj0",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxsilKby2Nzj0?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.md",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxywsjGLihBJo&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "uart_thread.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxywsjGLihBJo",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxywsjGLihBJo?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "uart_thread.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=Unx1HOQa1V69Ec&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "Board.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "Unx1HOQa1V69Ec",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/Unx1HOQa1V69Ec?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxMnbLQHtFwv8&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "MSP_EXP432P401R.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxMnbLQHtFwv8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxMnbLQHtFwv8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "MSP_EXP432P401R.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=Unx2r3_rIkjmwI&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "callbacks.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "Unx2r3_rIkjmwI",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/Unx2r3_rIkjmwI?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "callbacks.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxxxKYk6Oy1LQ&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "uart_thread.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxxxKYk6Oy1LQ",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxxxKYk6Oy1LQ?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "uart_thread.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxMPg67QrxdZ8&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "callbacks.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxMPg67QrxdZ8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxMPg67QrxdZ8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "callbacks.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=Unx3MKLSxChl2E&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "led_thread.c",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "Unx3MKLSxChl2E",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/Unx3MKLSxChl2E?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.c",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "led_thread.c",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "removeofflineLink": "api/resources?id=UnxkKv9z_laq80&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS Compiler/outofbox_msp432p401r&removeoffline=true",
+    "kernel": [
+      "tirtos"
+    ],
+    "name": "led_thread.h",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "devtools": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "coreTypes": [
+      "MSP432P401R"
+    ],
+    "resourceType": "file",
+    "compiler": [
+      "ccs"
+    ],
+    "_id": "UnxkKv9z_laq80",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "MSP432P401R LaunchPad - Red 2.x (Red)"
+    ],
+    "link": "api/linkTo/UnxkKv9z_laq80?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20MSP432P4%20SDK%2FExamples%2FDevelopment%20Tools%2FMSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)%2FDemos%2Foutofbox_msp432p401r%2FTI-RTOS%2FCCS%20Compiler%2Foutofbox_msp432p401r&extname=.h",
+    "package": "SimpleLink MSP432P4 SDK",
+    "packageId": "com.ti.SIMPLELINK_MSP432_SDK",
+    "packageVersion": "2.30.00.14",
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14",
+    "packagePath": "simplelink_msp432p4_sdk_2_30_00_14",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_msp432p4_sdk_2_30_00_14/.metadata/.tirex/.dependencies/outofbox_msp432p401r_MSP_EXP432P401R_tirtos_ccs_0.dependency.tirex.json",
+    "parentID": "UnxoGAYjvWbSU0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "led_thread.h",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/Demos/outofbox_msp432p401r/TI-RTOS/CCS%20Compiler/outofbox_msp432p401r&package=com.ti.SIMPLELINK_CC13X0_SDK__2.20.00.38::com.ti.SIMPLELINK_CC13X2_SDK__2.20.00.71::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.20.00.36::com.ti.SIMPLELINK_CC2640R2_SDK__2.20.00.49::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__1.60.00.07::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.00.01.01::com.ti.WATSON_CC32XX__1.00.01.01::com.ti.SAIL__1.20.00.02::com.ti.AZURE_CC32XX__2.00.00.07::com.ti.AZURE_MSP432E4__2.00.00.07::com.ti.AWS_CC32XX__2.00.00.09::c2000ware_software_package__1.00.05.00::digital_power_c2000ware_sdk_software_package__1.01.00.00::powerSUITE_software_package__2.02.00.00::com.ti.mmwave_industrial_toolbox__2.5.2::com.ti.mmwave_automotive_toolbox__2.4.1::msp430ware__3.80.02.10::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.05.12::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::com.ti.AWS_MSP432E4__2.00.00.09",
+    "packageOrder": 35,
+    "offline": "true"
+  }
+]
