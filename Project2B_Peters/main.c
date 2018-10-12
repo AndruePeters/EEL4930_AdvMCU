@@ -239,7 +239,7 @@ void InitHardware()
 
       /* Set these pins as output */
       MAP_GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_P2,
-               GPIO_PIN0 | GPIO_PIN1 | GPIO_PIN2 | GPIO_PIN7, GPIO_PRIMARY_MODULE_FUNCTION);
+               GPIO_PIN0 | GPIO_PIN1 | GPIO_PIN2 | GPIO_PIN6, GPIO_PRIMARY_MODULE_FUNCTION);
 
 
       /* Configure S1 and S2 as input and enable interrupts */
