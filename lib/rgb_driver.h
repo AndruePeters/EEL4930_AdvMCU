@@ -11,7 +11,7 @@
  *
  *
  * There are some very important things to be noted when using this library.
- * Make sure that countPd is the same as the sourced timer, otherwise things
+ * Make sure that timer_period is the same as the sourced timer, otherwise things
  * can go awry. I'm not completely sure what will happen if your dutyCycle period
  * is greater than the sourced timer period, but I will find out for fun later. My
  * guess is that nothing will happen and no interrupt will be serviced.
@@ -24,31 +24,34 @@
 #ifndef _RGB_DRIVER_H
 #define _RGB_DRIVER_H
 
-typedef enum rgb_led {RGB_DRIVER_RED, RGB_DRIVER_GREEN, RGB_DRIVER_BLUE} rgb_led;
+#include <assert.h>
+#define ERR_PORT_OUT_OF_RANGE (1)
+#define ERR_PIN_OUT_OF_RANGE  (2)
+#define ERR_COLOR_DOES_NOT_EXIST (1)
+#define ERR_PCT_GREATER_100 (1)
+#define RGB_DRIVER_SUCCESS (1)
 
-int set_red_led(uint32_t port, uint32_t pin, uint32_t intensity);
-int set_green_led(uint32_t port, uint32_t pin, uint32_t intensity);
-int set_blue_led(uint33_t port, uint32_t pin, uint32_t intensity);
 
-int set_intensity(rgb_led color, uint32_t intensity);
-static uint32_t map_intensity(intensity);
 
-struct rgbDriver {
+typedef enum rgb_led_color {RGB_DRIVER_RED, RGB_DRIVER_GREEN, RGB_DRIVER_BLUE} rgb_led_color;
+
+
+
+struct rgb_driver {
     /* The ports of each led */
-    /* e.g. redLedPort = GPIO_PORT_P2 */
+    /* e.g. red_led_port = GPIO_PORT_P2 */
     uint32_t red_led_port;
     uint32_t green_led_port;
     uint32_t blue_led_port;
 
     /* The pin of the led */
-    /* e.g. redLedPin = GPIO_PIN0 */
+    /* e.g. red_led_pin = GPIO_PIN0 */
     uint32_t red_led_pin;
     uint32_t green_led_pin;
     uint32_t blue_led_pin;
 
     /* This is tick count used for configuring the main timer */
-
-    uint32_t countPd;
+    uint32_t timer_period;
 
     /* Pointers to structs for respective timer config */
     Timer_A_PWMConfig *red_pwm_config;
@@ -56,56 +59,13 @@ struct rgbDriver {
     Timer_A_PWMConfig *blue_pwm_config;
 };
 
-int set_red_led(uint32_t port, uint32_t pin, uint32_t intensity)
-{
-  red_led_port = port;
-  red_led_pin = pin;
-  set_intensity(RGB_DRIVER_RED, intensity);
-}
+int set_red_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
+int set_green_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
+int set_blue_led(struct rgb_driver *self, uint33_t port, uint32_t pin, uint32_t intensity);
 
-int set_green_led(uint32_t port, uint32_t pin, uint32_t intensity)
-{
-  green_led_port = port;
-  green_led_pin = pin;
-  set_intensity(RGB_DRIVER_GREEN, intensity);
-}
-
-int set_blue_led(uint32_t port, uint32_t pin, uint32_t intensity)
-{
-  blue_led_port = port;
-  blue_led_pin = pin;
-  set_intensity(RGB_DRIVER_BLUE, intensity);
-}
-
-
-int set_intensity(rgb_led color, uint32_t intensity)
-{
-  switch(color) {
-    case RGB_DRIVER_RED:
-      red_pwm_config->dutyCycle = map_intensity(intensity);
-      break;
-
-    case RGB_DRIVER_GREEN:
-      green_pwm_config->dutyCycle = map_intensity(intensity);
-      break;
-
-    case RGB_DRIVER_BLUE:
-      green_pwm_config->dutyCycle = map_intensity(intensity);
-      break;
-
-    default:
-      return -1;
-  }
-
-  return 0;
-}
-
-/* Based off of the standard mapping algorithm: */
-/* output = (x * in_min) * (out_max - out_min) / (in_max - in_min) + out_min */
-/* In this case, in_min = out_min = 0 */
-uint32_t map_intensity(uint32_t intensity)
-{
-  return (intensity) * (countPd) / 255 + countPd;
-}
+int set_intensity(struct rgb_driver *self, rgb_led_color color, uint32_t intensity);
+int set_duty_cycle_pct(struct rgb_driver *self,rgb_led_color color, uint32_t pct);
+void set_period(struct rgb_driver *self, uint32_t pd);
+static uint32_t map_intensity(struct rgb_driver *self, uint32_t intensity);
 
 #endif
