@@ -1,0 +1,4 @@
+#ignore .jxbrowser-data
+.jxbrowswer-data/
+.metadata/
+RemoteSystemTempFiles/
