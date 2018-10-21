@@ -1,4 +1,3 @@
-
 /*
  * Andrue Peters
  * 10/15/18
@@ -43,7 +42,7 @@
  */
 int set_red_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity)
 {
-  if (port > 8) {
+if (port > 8) {
     return ERR_PORT_OUT_OF_RANGE;
   }
   if (pin > 7) {
@@ -104,20 +103,22 @@ int set_blue_led(struct rgb_driver *self,uint32_t port, uint32_t pin, uint32_t i
 
 
 /*  Sets the intensity of the LED by changing the duty cycle */
-int set_intensity(struct rgb_driver *self, rgb_led color, uint32_t intensity)
+int set_intensity(struct rgb_driver *self, rgb_led_color color, uint32_t intensity)
 {
   switch(color) {
     case RGB_DRIVER_RED:
-      self->red_pwm_config->dutyCycle = map_intensity(intensity);
-      Timer_A_generatePWM(TIMER_A0_BASE, &lcdPWMConfig);
+      self->red_pwm_config->dutyCycle = map_intensity(self, intensity);
+      Timer_A_generatePWM(TIMER_A0_BASE, self->red_pwm_config);
       break;
 
     case RGB_DRIVER_GREEN:
-      self->green_pwm_config->dutyCycle = map_intensity(intensity);
+      self->green_pwm_config->dutyCycle = map_intensity(self, intensity);
+      Timer_A_generatePWM(TIMER_A0_BASE, self->red_pwm_config);
       break;
 
     case RGB_DRIVER_BLUE:
-      self->green_pwm_config->dutyCycle = map_intensity(intensity);
+      self->green_pwm_config->dutyCycle = map_intensity(self, intensity);
+      Timer_A_generatePWM(TIMER_A0_BASE, self->red_pwm_config);
       break;
 
     default:
@@ -165,5 +166,7 @@ void set_period(struct rgb_driver *self, uint32_t pd)
 */
 uint32_t map_intensity(struct rgb_driver *self, uint32_t intensity)
 {
+  if (intensity > 255)
+    intensity = 255;
   return (intensity) * (self->timer_period) / 255 + self->timer_period;
 }

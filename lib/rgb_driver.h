@@ -12,24 +12,30 @@
  *
  * There are some very important things to be noted when using this library.
  * Make sure that timer_period is the same as the sourced timer, otherwise things
- * can go awry. I'm not completely sure what will happen if your dutyCycle period
- * is greater than the sourced timer period, but I will find out for fun later. My
- * guess is that nothing will happen and no interrupt will be serviced.
+ * can go awry. There is no pointer to the struct, which allows the user to use
+ * multiple timer modes. I'm not completely sure what will happen if your dutyCycle
+ * period is greater than the sourced timer period, but I will find out for fun
+ * later. My guess is that nothing will happen and no interrupt will be serviced.
  *
  * I am making this similar to the arduino library where the user only has to
  * enter a value 0 to 255 for the intensity with 0 being off and 255 being the brightest
  *
- * If the port is 0, then this will not attempt to do anything
+ * If the port is 0, then this will not attempt to do anything.
+ *
+ * For this driver, pin does not matter, but the user must set up the appropriate port mapping.
+ * Driver uses Timer_A_generatePwm(), so the Timer_A_PWMConfig struct must be used
 */
 #ifndef _RGB_DRIVER_H
 #define _RGB_DRIVER_H
+#include <ti/devices/msp432p4xx/inc/msp.h>
+#include <ti/devices/msp432p4xx/driverlib/driverlib.h>
+#include <stdio.h>
 
-#include <assert.h>
-#define ERR_PORT_OUT_OF_RANGE (1)
-#define ERR_PIN_OUT_OF_RANGE  (2)
-#define ERR_COLOR_DOES_NOT_EXIST (1)
-#define ERR_PCT_GREATER_100 (1)
-#define RGB_DRIVER_SUCCESS (1)
+#define ERR_PORT_OUT_OF_RANGE       (1)
+#define ERR_PIN_OUT_OF_RANGE        (2)
+#define ERR_COLOR_DOES_NOT_EXIST    (1)
+#define ERR_PCT_GREATER_100         (1)
+#define RGB_DRIVER_SUCCESS          (1)
 
 
 
@@ -61,7 +67,7 @@ struct rgb_driver {
 
 int set_red_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
 int set_green_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
-int set_blue_led(struct rgb_driver *self, uint33_t port, uint32_t pin, uint32_t intensity);
+int set_blue_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
 
 int set_intensity(struct rgb_driver *self, rgb_led_color color, uint32_t intensity);
 int set_duty_cycle_pct(struct rgb_driver *self,rgb_led_color color, uint32_t pct);
