@@ -3,27 +3,20 @@
  * 10/15/18
  * Advanced topics in Microcontrollers
  *
+ * This library currently does not have configurable interrupts for the eval board or booster pack.
+ * TIMER_A0_BASE and CCR1-3 are used for the RGB led 2.0-2.2 respectively.
  *
- * This is being designed because manually dealing with the ins and outs out of
- * handling PWM with rgb leds is starting to make the code difficult to manage
- * and read.
+ * First call rgb_init_rgb_driver() with RGB_BOOSTER_PACK and RGB_EVAL_BOARD for rgb_set. These select
+ * the pin configuration for the board or booster pack. Pass in the period of the configured timer, and
+ * also pass in the timer base in form TIMER_AX_BASE. This feature will be used in the future.
  *
+ * When you make any changes, rgb_start() must be called afterwards to update the timer and show changes.
+ * So, if you call  rgb_set_intensity(rgb_led_color color, uint32_t intensity), rgb_start() must be called
+ * to make changes take affect.
  *
+ * If a function requires rgb_led_color, then appropriate values are in the enum. This selects the
+ * the color to be edited.
  *
- * There are some very important things to be noted when using this library.
- * Make sure that timer_period is the same as the sourced timer, otherwise things
- * can go awry. There is no pointer to the struct, which allows the user to use
- * multiple timer modes. I'm not completely sure what will happen if your dutyCycle
- * period is greater than the sourced timer period, but I will find out for fun
- * later. My guess is that nothing will happen and no interrupt will be serviced.
- *
- * I am making this similar to the arduino library where the user only has to
- * enter a value 0 to 255 for the intensity with 0 being off and 255 being the brightest
- *
- * If the port is 0, then this will not attempt to do anything.
- *
- * For this driver, pin does not matter, but the user must set up the appropriate port mapping.
- * Driver uses Timer_A_generatePwm(), so the Timer_A_PWMConfig struct must be used
 */
 #ifndef _RGB_DRIVER_H
 #define _RGB_DRIVER_H
@@ -31,47 +24,44 @@
 #include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 #include <stdio.h>
 
-#define ERR_PORT_OUT_OF_RANGE       (1)
-#define ERR_PIN_OUT_OF_RANGE        (2)
+/* set up errors */
+#define ERR_RGB_SET_NOT_EXIST       (-1)
 #define ERR_COLOR_DOES_NOT_EXIST    (1)
 #define ERR_PCT_GREATER_100         (1)
 #define RGB_DRIVER_SUCCESS          (1)
 
+/* use these two for rgb_set */
+#define RGB_BOOSTER_PACK            (2)
+#define RGB_EVAL_BOARD              (1)
 
 
-typedef enum rgb_led_color {RGB_DRIVER_RED, RGB_DRIVER_GREEN, RGB_DRIVER_BLUE} rgb_led_color;
+
+typedef enum rgb_led_color {RGB_DRIVER_RED, RGB_DRIVER_GREEN, RGB_DRIVER_BLUE, RGB_DRIVER_ALL} rgb_led_color;
 
 
 
-struct rgb_driver {
-    /* The ports of each led */
-    /* e.g. red_led_port = GPIO_PORT_P2 */
-    uint32_t red_led_port;
-    uint32_t green_led_port;
-    uint32_t blue_led_port;
 
-    /* The pin of the led */
-    /* e.g. red_led_pin = GPIO_PIN0 */
-    uint32_t red_led_pin;
-    uint32_t green_led_pin;
-    uint32_t blue_led_pin;
+/* Initializes and sets board pin configuration. */
+/* Use above defines for rgb_set, and TIMER_AX_BASE for timer */
+int rgb_init_rgb_driver(uint32_t rgb_set, uint32_t pd, uint32_t timer);
 
-    /* This is tick count used for configuring the main timer */
-    uint32_t timer_period;
+/* Calls generatePWM, making changes take affect */
+int rgb_start(rgb_led_color color);
 
-    /* Pointers to structs for respective timer config */
-    Timer_A_PWMConfig *red_pwm_config;
-    Timer_A_PWMConfig *green_pwm_config;
-    Timer_A_PWMConfig *blue_pwm_config;
-};
+/* Sets duty cycle to 0 and then updates causing lights to go off */
+int rgb_stop(rgb_led_color color);
 
-int set_red_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
-int set_green_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
-int set_blue_led(struct rgb_driver *self, uint32_t port, uint32_t pin, uint32_t intensity);
+/* Use like Arduino analogWrite(), with intensity being value 0 - 255 */
+int rgb_set_intensity(rgb_led_color color, uint32_t intensity);
 
-int set_intensity(struct rgb_driver *self, rgb_led_color color, uint32_t intensity);
-int set_duty_cycle_pct(struct rgb_driver *self,rgb_led_color color, uint32_t pct);
-void set_period(struct rgb_driver *self, uint32_t pd);
-static uint32_t map_intensity(struct rgb_driver *self, uint32_t intensity);
+/* Set the duty cycle in percentage form */
+int rgb_set_duty_cycle_pct(rgb_led_color color, uint32_t pct);
+
+/* Set the actual duty cycle */
+int rgb_set_duty_cycle(rgb_led_color color, uint32_t dc);
+
+/* update the period of all timer modules */
+void rgb_set_period(uint32_t pd);
+
 
 #endif

@@ -37,11 +37,19 @@ struct accelerometer {
 };
 
 
-
+/* Set function pointer to have function run in ADC14_IRQ */
 void set_func_pointer(void (*func)());
+
+/* initialize accelerometer */
 void init_accelerometer();
+
+/* stop the accelerometer */
 void stop_accelerometer();
+
+/* start the accelerometer */
 void start_accelerometer();
+
+/* returns pointer to accelerometer data */
 struct accelerometer* get_accel_data();
 
 #endif

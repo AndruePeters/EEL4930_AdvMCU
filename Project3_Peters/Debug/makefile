@@ -12,6 +12,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./HAL_I2C.obj" \
 "./HAL_OPT3001.obj" \
+"./accelerometer_driver.obj" \
 "./main.obj" \
 "./rgb_driver.obj" \
 "./system_msp432p401r.obj" \
@@ -172,8 +173,8 @@ Project3.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "HAL_I2C.obj" "HAL_OPT3001.obj" "main.obj" "rgb_driver.obj" "system_msp432p401r.obj" "LcdDriver\Crystalfontz128x128_ST7735.obj" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "ccs\startup_msp432p401r_ccs.obj" 
-	-$(RM) "HAL_I2C.d" "HAL_OPT3001.d" "main.d" "rgb_driver.d" "system_msp432p401r.d" "LcdDriver\Crystalfontz128x128_ST7735.d" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.d" "ccs\startup_msp432p401r_ccs.d" 
+	-$(RM) "HAL_I2C.obj" "HAL_OPT3001.obj" "accelerometer_driver.obj" "main.obj" "rgb_driver.obj" "system_msp432p401r.obj" "LcdDriver\Crystalfontz128x128_ST7735.obj" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "ccs\startup_msp432p401r_ccs.obj" 
+	-$(RM) "HAL_I2C.d" "HAL_OPT3001.d" "accelerometer_driver.d" "main.d" "rgb_driver.d" "system_msp432p401r.d" "LcdDriver\Crystalfontz128x128_ST7735.d" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.d" "ccs\startup_msp432p401r_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
