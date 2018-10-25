@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./HAL_I2C.obj" \
 "./HAL_OPT3001.obj" \
 "./buzzer_driver.obj" \
+"./driverlib_aux.obj" \
 "./main.obj" \
 "./system_msp432p401r.obj" \
 "./LcdDriver/Crystalfontz128x128_ST7735.obj" \
@@ -172,8 +173,8 @@ buzzer_test.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "HAL_I2C.obj" "HAL_OPT3001.obj" "buzzer_driver.obj" "main.obj" "system_msp432p401r.obj" "LcdDriver\Crystalfontz128x128_ST7735.obj" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "ccs\startup_msp432p401r_ccs.obj" 
-	-$(RM) "HAL_I2C.d" "HAL_OPT3001.d" "buzzer_driver.d" "main.d" "system_msp432p401r.d" "LcdDriver\Crystalfontz128x128_ST7735.d" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.d" "ccs\startup_msp432p401r_ccs.d" 
+	-$(RM) "HAL_I2C.obj" "HAL_OPT3001.obj" "buzzer_driver.obj" "driverlib_aux.obj" "main.obj" "system_msp432p401r.obj" "LcdDriver\Crystalfontz128x128_ST7735.obj" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "ccs\startup_msp432p401r_ccs.obj" 
+	-$(RM) "HAL_I2C.d" "HAL_OPT3001.d" "buzzer_driver.d" "driverlib_aux.d" "main.d" "system_msp432p401r.d" "LcdDriver\Crystalfontz128x128_ST7735.d" "LcdDriver\HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.d" "ccs\startup_msp432p401r_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

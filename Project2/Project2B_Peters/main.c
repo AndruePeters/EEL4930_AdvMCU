@@ -161,11 +161,11 @@ static uint16_t resultsBuffer[2];
 /******************************************************************************/
 /*                           Function Prototypes                              */
 /******************************************************************************/
-void initClock();
+void init_clock();
 void InitADC();
 void InitTimer();
 void InitDisplay();
-void initHardware();
+void init_hardware();
 void InitQuestions();
 void ShowGreeting();
 
@@ -190,7 +190,7 @@ void ShowScore();
 int main(void)
 {
     InitQuestions();
-    initHardware();
+    init_hardware();
     ShowGreeting();
 
     while(1)
@@ -215,7 +215,7 @@ int main(void)
 /******************************************************************************/
 
 // initializes hardware
-void initHardware()
+void init_hardware()
 {
     /* Halting WDT and disabling master interrupts */
       MAP_WDT_A_holdTimer();
@@ -229,7 +229,7 @@ void initHardware()
       MAP_FlashCtl_setWaitState(FLASH_BANK0, 2);
       MAP_FlashCtl_setWaitState(FLASH_BANK1, 2);
 
-      initClock();
+      init_clock();
       InitDisplay();
 
 
@@ -275,7 +275,7 @@ void initHardware()
 
 // initializes clock
 // frequency is set to 6MHz for the scrolling effect as seen on Gameboys
-void initClock()
+void init_clock()
 {
     /* Initializes Clock System */
       MAP_CS_setDCOCenteredFrequency(CS_DCO_FREQUENCY_6);

@@ -42,8 +42,8 @@ int main()
 
     rgb_init_rgb_driver(RGB_EVAL_BOARD, 5000, TIMER_A0_BASE);
 
-    MAP_Timer_A_configureUpMode(TIMER_A0_BASE, &upConfig);
-    MAP_Interrupt_enableMaster();
+    //MAP_Timer_A_configureUpMode(TIMER_A0_BASE, &upConfig);
+    //MAP_Interrupt_enableMaster();
     rgb_set_duty_cycle(RGB_DRIVER_ALL, 2500);
     rgb_start(RGB_DRIVER_ALL);
     uint32_t counter = 0;

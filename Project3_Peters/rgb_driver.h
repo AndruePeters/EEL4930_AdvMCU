@@ -63,5 +63,7 @@ int rgb_set_duty_cycle(rgb_led_color color, uint32_t dc);
 /* update the period of all timer modules */
 void rgb_set_period(uint32_t pd);
 
+uint32_t rgb_get_period();
+
 
 #endif

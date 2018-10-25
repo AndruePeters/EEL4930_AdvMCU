@@ -1,4 +1,5 @@
 #include <buzzer_driver.h>
+#include <driverlib_aux.h> // single pin port map
 
 /* Struct to hold buzzer information */
 struct buzzer_driver {
@@ -15,7 +16,7 @@ static uint32_t get_timer_ccr(uint32_t timer, uint32_t ccr);
 struct buzzer_driver _buzzer_driver_;
 
 /* port mapping array */
-uint8_t port2_mapping[] =
+uint8_t port2_mapping_buzzer[] =
 {
  PM_NONE, PM_NONE, PM_NONE, PM_NONE, PM_NONE, PM_NONE, PM_NONE , PM_NONE
 };
@@ -52,7 +53,7 @@ int init_buzzer(uint32_t pd, uint32_t timer, uint32_t ccr)
     _buzzer_driver_.buzzer_pwm_config.timerPeriod = pd;
     _buzzer_driver_.buzzer_pwm_config.compareRegister = ccr;
     _buzzer_driver_.buzzer_pwm_config.compareOutputMode = TIMER_A_OUTPUTMODE_RESET_SET;
-    _buzzer_driver_.buzzer_pwm_config.dutyCycle = 50;
+    set_duty_cycle_pct_buzzer(50);
 
 
     set_port_map(timer, ccr);
@@ -108,7 +109,6 @@ static uint32_t map_intensity(uint32_t intensity)
 {
   if (intensity > 255)
     intensity = 255;
-
   return ( (intensity - 0) * (_buzzer_driver_.buzzer_pwm_config.timerPeriod - 0) ) / 255;
 }
 
@@ -116,11 +116,13 @@ static uint32_t map_intensity(uint32_t intensity)
 static void set_port_map(uint32_t timer, uint32_t ccr)
 {
     uint32_t timer_ccr = get_timer_ccr(timer, ccr);
-    port2_mapping[7] = timer_ccr;
+    port2_mapping_buzzer[7] = timer_ccr;
 
     /* configure port map */
-    MAP_PMAP_configurePorts((const uint8_t *) port2_mapping, PMAP_P2MAP, 1,
-        PMAP_DISABLE_RECONFIGURATION);
+    PMAP_configurePort(GPIO_PIN7, timer_ccr, PMAP_P2MAP, PMAP_DISABLE_RECONFIGURATION);
+
+   /* MAP_PMAP_configurePorts((const uint8_t *) port2_mapping_buzzer, PMAP_P2MAP, 1,
+        PMAP_DISABLE_RECONFIGURATION);*/
 
 }
  // set_port_map}

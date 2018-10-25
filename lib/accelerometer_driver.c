@@ -5,7 +5,7 @@
 
 
 /* holds accelerometer data */
-struct accelerometer _accel_ = {0,0,0};
+volatile struct accelerometer _accel_ = {0,0,0};
 
 /* function pointer to insert at end of interrupt */
 void (*p_func)();
@@ -17,7 +17,7 @@ void set_func_pointer(void (*func)())
 }
 
 /* Returns constant pointer to _accel_ */
- struct accelerometer* get_accel_data()
+ volatile struct accelerometer* get_accel_data()
 {
     return &_accel_;
 }

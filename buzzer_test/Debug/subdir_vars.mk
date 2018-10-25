@@ -12,6 +12,7 @@ C_SRCS += \
 ../HAL_I2C.c \
 ../HAL_OPT3001.c \
 ../buzzer_driver.c \
+../driverlib_aux.c \
 ../main.c \
 ../system_msp432p401r.c 
 
@@ -19,6 +20,7 @@ C_DEPS += \
 ./HAL_I2C.d \
 ./HAL_OPT3001.d \
 ./buzzer_driver.d \
+./driverlib_aux.d \
 ./main.d \
 ./system_msp432p401r.d 
 
@@ -26,6 +28,7 @@ OBJS += \
 ./HAL_I2C.obj \
 ./HAL_OPT3001.obj \
 ./buzzer_driver.obj \
+./driverlib_aux.obj \
 ./main.obj \
 ./system_msp432p401r.obj 
 
@@ -33,6 +36,7 @@ OBJS__QUOTED += \
 "HAL_I2C.obj" \
 "HAL_OPT3001.obj" \
 "buzzer_driver.obj" \
+"driverlib_aux.obj" \
 "main.obj" \
 "system_msp432p401r.obj" 
 
@@ -40,6 +44,7 @@ C_DEPS__QUOTED += \
 "HAL_I2C.d" \
 "HAL_OPT3001.d" \
 "buzzer_driver.d" \
+"driverlib_aux.d" \
 "main.d" \
 "system_msp432p401r.d" 
 
@@ -47,6 +52,7 @@ C_SRCS__QUOTED += \
 "../HAL_I2C.c" \
 "../HAL_OPT3001.c" \
 "../buzzer_driver.c" \
+"../driverlib_aux.c" \
 "../main.c" \
 "../system_msp432p401r.c" 
 

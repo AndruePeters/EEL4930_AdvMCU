@@ -1,7 +1,7 @@
 # FIXED
 
 buzzer_driver.obj: ../buzzer_driver.c
-buzzer_driver.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/buzzer_test/buzzer_driver.h
+buzzer_driver.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/buzzer_driver.h
 buzzer_driver.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/inc/msp.h
 buzzer_driver.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/inc/msp432p401r.h
 buzzer_driver.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/stdint.h
@@ -48,10 +48,10 @@ buzzer_driver.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/ms
 buzzer_driver.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/wdt_a.h
 buzzer_driver.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/sysctl.h
 buzzer_driver.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/flash.h
-buzzer_driver.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/buzzer_test/driverlib_aux.h
+buzzer_driver.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/driverlib_aux.h
 
 ../buzzer_driver.c: 
-C:/Users/druep/Documents/EEL4930_AdvMCU/buzzer_test/buzzer_driver.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/buzzer_driver.h: 
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/inc/msp.h: 
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/inc/msp432p401r.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/stdint.h: 
@@ -98,4 +98,4 @@ C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/wdt_a.h: 
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/sysctl.h: 
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/driverlib/flash.h: 
-C:/Users/druep/Documents/EEL4930_AdvMCU/buzzer_test/driverlib_aux.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/driverlib_aux.h: 

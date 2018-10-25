@@ -42,6 +42,6 @@ void set_func_pointer(void (*func)());
 void init_accelerometer();
 void stop_accelerometer();
 void start_accelerometer();
-struct accelerometer* get_accel_data();
+volatile struct accelerometer* get_accel_data();
 
 #endif

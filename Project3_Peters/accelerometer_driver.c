@@ -5,7 +5,8 @@
 
 
 /* holds accelerometer data */
-struct accelerometer _accel_ = {0,0,0};
+volatile struct accelerometer _accel_ = {0,0,0};
+uint16_t results_buffer[3] = {0, 0, 0};
 
 /* function pointer to insert at end of interrupt */
 void (*p_func)();
@@ -17,7 +18,7 @@ void set_func_pointer(void (*func)())
 }
 
 /* Returns constant pointer to _accel_ */
- struct accelerometer* get_accel_data()
+ volatile struct accelerometer* get_accel_data()
 {
     return &_accel_;
 }
@@ -31,7 +32,7 @@ void init_accelerometer()
 
     /* Initializing ADC (ADCOSC/64/8) */
     MAP_ADC14_enableModule();
-    MAP_ADC14_initModule(ADC_CLOCKSOURCE_ADCOSC, ADC_PREDIVIDER_64, ADC_DIVIDER_8, 0);
+    MAP_ADC14_initModule(ADC_CLOCKSOURCE_ADCOSC, ADC_PREDIVIDER_1, ADC_DIVIDER_1, 0);
 
     /* Configuring ADC Memory (ADC_MEM0 - ADC_MEM2 (A11, A13, A14)  with no repeat)
          * with internal 2.5v reference */
@@ -58,7 +59,7 @@ void start_accelerometer()
 
    /* Enabling Interrupts */
    MAP_Interrupt_enableInterrupt(INT_ADC14);
-
+   //MAP_ADC14_setSampleHoldTrigger(ADC_TRIGGER_SOURCE1, false);
    MAP_ADC14_enableSampleTimer(ADC_AUTOMATIC_ITERATION);
 
    /* Triggering the start of the sample */
@@ -66,13 +67,14 @@ void start_accelerometer()
    MAP_ADC14_toggleConversionTrigger();
 }
 
-/* Pauses conversionand interrupts to stop accelerometer */
+/* Pauses conversion and interrupts to stop accelerometer */
 void stop_accelerometer()
 {
    MAP_ADC14_disableInterrupt(ADC_INT2);
    MAP_Interrupt_disableInterrupt(INT_ADC14);
    MAP_ADC14_disableSampleTimer();
    MAP_ADC14_disableConversion();
+
 }
 
 
@@ -87,7 +89,11 @@ void ADC14_IRQHandler(void)
     /* ADC_MEM2 conversion completed */
     if(status & ADC_INT2)
     {
+        //MAP_ADC14_getResultArray(ADC_MEM0, ADC_MEM2, results_buffer);
         /* Store ADC14 conversion results */
+        /*_accel_.x = results_buffer[0];
+        _accel_.y = results_buffer[1];
+        _accel_.z = results_buffer[2];*/
         _accel_.x = ADC14_getResult(ADC_MEM0);
         _accel_.y = ADC14_getResult(ADC_MEM1);
         _accel_.z = ADC14_getResult(ADC_MEM2);

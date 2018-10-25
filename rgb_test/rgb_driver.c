@@ -33,7 +33,7 @@ struct rgb_driver {
 struct rgb_driver _rgb_driver_;
 
 /* port2 mapping information */
-uint8_t port2_mapping[] =
+uint8_t port2_mapping_rgb[] =
 {
  PM_NONE, PM_NONE, PM_NONE, PM_NONE, PM_NONE, PM_NONE, PM_NONE , PM_NONE
 };
@@ -238,19 +238,31 @@ static void set_pins()
 static void set_port_map()
 {
     if (_rgb_driver_.rgb_set == RGB_EVAL_BOARD) {
-        port2_mapping[0] = PM_TA0CCR1A;
-        port2_mapping[1] = PM_TA0CCR2A;
-        port2_mapping[2] = PM_TA0CCR3A;
+        if (_rgb_driver_.timer == TIMER_A0_BASE) {
+            port2_mapping_rgb[0] = PM_TA0CCR1A;
+            port2_mapping_rgb[1] = PM_TA0CCR2A;
+            port2_mapping_rgb[2] = PM_TA0CCR3A;
+        } else if (_rgb_driver_.timer == TIMER_A1_BASE) {
+            port2_mapping_rgb[0] = PM_TA1CCR1A;
+            port2_mapping_rgb[1] = PM_TA1CCR2A;
+            port2_mapping_rgb[2] = PM_TA1CCR3A;
+        }
 
-        MAP_PMAP_configurePorts((const uint8_t *) port2_mapping, PMAP_P2MAP, 1,
+        MAP_PMAP_configurePorts((const uint8_t *) port2_mapping_rgb, PMAP_P2MAP, 1,
             PMAP_DISABLE_RECONFIGURATION);
 
     } else if (_rgb_driver_.rgb_set == RGB_BOOSTER_PACK) {
-        port2_mapping[6] = PM_TA0CCR1A;
-        port2_mapping[4] = PM_TA0CCR2A;
-        port5_mapping[6] = PM_TA0CCR3A;
+        if (_rgb_driver_.timer == TIMER_A0_BASE) {
+            port2_mapping_rgb[6] = PM_TA0CCR1A;
+            port2_mapping_rgb[4] = PM_TA0CCR2A;
+            port5_mapping[6] = PM_TA0CCR3A;
+        } else if (_rgb_driver_.timer == TIMER_A1_BASE) {
+            port2_mapping_rgb[6] = PM_TA1CCR1A;
+            port2_mapping_rgb[4] = PM_TA1CCR2A;
+            port5_mapping[6] = PM_TA1CCR3A;
+        }
 
-        MAP_PMAP_configurePorts((const uint8_t *) port2_mapping, PMAP_P2MAP, 1,
+        MAP_PMAP_configurePorts((const uint8_t *) port2_mapping_rgb, PMAP_P2MAP, 1,
             PMAP_DISABLE_RECONFIGURATION);
 
         MAP_PMAP_configurePorts((const uint8_t *) port5_mapping, PMAP_P5MAP, 1,

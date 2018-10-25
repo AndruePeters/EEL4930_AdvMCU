@@ -55,9 +55,16 @@ main.obj: ../HAL_I2C.h
 main.obj: ../HAL_OPT3001.h
 main.obj: ../LcdDriver/Crystalfontz128x128_ST7735.h
 main.obj: C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/grlib/grlib.h
+main.obj: ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h
 main.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/stdio.h
 main.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/stdarg.h
+main.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/math.h
+main.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/_defs.h
+main.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/machine/_limits.h
 main.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/rgb_driver.h
+main.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/accelerometer_driver.h
+main.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/buzzer_driver.h
+main.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/driverlib_aux.h
 
 ../main.c: 
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/devices/msp432p4xx/inc/msp.h: 
@@ -114,6 +121,13 @@ C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/linkage.h:
 ../HAL_OPT3001.h: 
 ../LcdDriver/Crystalfontz128x128_ST7735.h: 
 C:/ti/simplelink_msp432p4_sdk_2_20_00_12/source/ti/grlib/grlib.h: 
+../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/stdio.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/stdarg.h: 
+C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/math.h: 
+C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/_defs.h: 
+C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include/machine/_limits.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/rgb_driver.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/accelerometer_driver.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/buzzer_driver.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/Project3_Peters/driverlib_aux.h: 

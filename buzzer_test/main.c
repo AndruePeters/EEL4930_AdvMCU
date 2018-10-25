@@ -26,7 +26,7 @@ int main()
 {
     MAP_WDT_A_holdTimer();
     MAP_Interrupt_disableMaster();
-    init_buzzer(upConfig.timerPeriod, TIMER_A1_BASE, TIMER_A_CAPTURECOMPARE_REGISTER_3);
+    init_buzzer(upConfig.timerPeriod, TIMER_A1_BASE, TIMER_A_CAPTURECOMPARE_REGISTER_1);
     MAP_Timer_A_configureUpMode(TIMER_A1_BASE, &upConfig);
     MAP_Interrupt_enableMaster();
     set_intensity_buzzer(255);
