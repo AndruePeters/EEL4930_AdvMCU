@@ -174,7 +174,7 @@ void process_accelerometer();
 
 
 /*
- * Processes set flags and then renables interrupts then goes to low power mode 0 */
+ * Processes set flags and then renables interrupts then goes to low power mode 0 
  */
 int main(void)
 {
