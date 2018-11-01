@@ -1,6 +1,6 @@
 /*
  * Andrue Peters
- * 10/3/18
+ * 10/15/18
  *
  *  Project 2B: Quiz
  *
@@ -10,27 +10,32 @@
  *  P2.1 - RGB_GREEN    - TIMER_A_CAPTURECOMPARE_REGISTER_2
  *  P2.2 - RGB_BLUE     - TIMER_A_CAPTURECOMPARE_REGISTER_3
  *
- *  J4.33 - P3.5 - S2
- *  J4.32 - P5.1 - S1
- *  j1.5  - P4.1 - JS_Button
  *  J4.40 - P2.7 - Buzzer
- * Resolution of board is 128x128
+ *  P2.6  - LCD Backlight
+ *  Resolution of board is 128x128
+ *
+ *  All LEDs are on TIMER_A0_BASE
+ *  Buzzer is on TIMER_A1_BASE
  *
  *
- *  Ambient Light Sensor Notes
- *      LUX VALUES
- *      -------------------------------------------
- *      |Description                    | Lux value|
- *      --------------------------------------------
- *      Flashlight directly on:         131040
- *      Light 6 inches above:           1100-1300
- *      Light about 1.5ft above:        300
- *      Dimly lit room in overcast day: 145
- *      Bright room w/ fluorescent:     980
+ *  Description: This program does several things as defined in the README:
+ *      1) The LCD brightens when the room gets darker.
+ *              *uses an exponential maf. The weight was chosen experimentally and not analytically
  *
+ *      2) Displays the current accelerometer values as well as the maximum values. Reset using the board reset button.
+ *              * The max values are only written to the screen when a new max value has occured. There is no reason
+ *                to update the max every single time. The program functions faster by doing this.
  *
- * All LEDs are on TIMER_A0_BASE
- * Buzzer is on TIMER_A1_BASE
+ *      3) Fall sensor: the buzzer will go off, indicating a fall, when the accelerometer detects quick change
+ *                      in acceleration. 
+ *              * This works by keeping a copy of the previous accelerometer values and checking to see if there
+ *                has been a steep change. It works by checking to see if the new value is +- 3000, or the accelerometer
+ *                value is over 12000.
+ *
+ *      4) The eval board RGB LED will change colors based upon the accelerometer values. 
+ *              * I noticed that the accelerometer doesn't really go under 5000 and on average doesn't go over 12000,
+ *                so I used a linear mapping algorithm (afine transformation?) to map the accelerometer values of [5000, 12000]
+ *                to the timer values [0, TIMER_A0_PERIOD]. This allows for a really smooth transition free of "jumps".
  *
  *
  */
@@ -56,12 +61,14 @@
 /******************************************************************************/
 #define TIMER_A0_PERIOD 200
 #define TIMER_A1_PERIOD 10000
-#define TIMER_A2_PERIOD 1500 // 1ms period
+#define TIMER_A2_PERIOD 1500 
 
 
 /******************************************************************************/
 /*                          Global Variables                                  */
 /******************************************************************************/
+
+/* program flags for various things */
 struct flags_t  {
     uint32_t draw_x_max: 1;
     uint32_t draw_y_max: 1;
@@ -74,9 +81,10 @@ struct flags_t  {
     uint32_t buffer: 24;
 };
 
+/* variable to hold the flags */
 struct flags_t flags;
 
-/* lcd buffer */
+/* lcd buffer to store characters for writing */
 char lcd_buffer[15];
 
 /* Graphic library context */
@@ -84,7 +92,7 @@ Graphics_Context g_sContext;
 
 /* store value from light sensor - OPT3001 */
 volatile uint32_t lux;
-volatile float filteredLux;
+volatile float filteredLux; // uses exponential maf
 
 
 /* Store results from accelerometer */
@@ -95,22 +103,21 @@ volatile struct accelerometer accel_max;
 
 /* used for timing buzzer duration in TIMER A2 */
 uint32_t buzzer_overflow_counter;
-
-uint32_t buzzer_duty_cycle = 50;
+uint32_t buzzer_duty_cycle = 50; // 50% starting duty cycle
 
 
 /******************************************************************************/
 /*                          Timer Config                                      */
 /******************************************************************************/
-/* Timer_A Up Configuration Parameter */
+/* Used for periodically checkign the sensors */
 const Timer_A_UpModeConfig sensorCheckTimer =
 {
-        TIMER_A_CLOCKSOURCE_SMCLK,               // ACLK Clock SOurce
-        TIMER_A_CLOCKSOURCE_DIVIDER_1,          // ACLK/1 = 3MHz
-        TIMER_A2_PERIOD,                                    // 200 tick period
-        TIMER_A_TAIE_INTERRUPT_ENABLE,         // Enable Timer interrupt
-        TIMER_A_CCIE_CCR0_INTERRUPT_DISABLE,    // Disable CCR0 interrupt
-        TIMER_A_DO_CLEAR                        // Clear value
+        TIMER_A_CLOCKSOURCE_SMCLK,               
+        TIMER_A_CLOCKSOURCE_DIVIDER_1,          
+        TIMER_A2_PERIOD,                       
+        TIMER_A_TAIE_INTERRUPT_ENABLE,         
+        TIMER_A_CCIE_CCR0_INTERRUPT_DISABLE,    
+        TIMER_A_DO_CLEAR                        
 };
 
 const Timer_A_UpModeConfig timer_A1 =
@@ -123,6 +130,7 @@ const Timer_A_UpModeConfig timer_A1 =
         TIMER_A_DO_CLEAR                        // Clear value
 };
 
+/* timer struct to control brightness of LCD */
 Timer_A_PWMConfig lcdPWMConfig =
 {
         TIMER_A_CLOCKSOURCE_SMCLK,
@@ -130,39 +138,43 @@ Timer_A_PWMConfig lcdPWMConfig =
         TIMER_A0_PERIOD,
         TIMER_A_CAPTURECOMPARE_REGISTER_4,
         TIMER_A_OUTPUTMODE_RESET_SET,
-        0       // 50% duty cycle to start
+        0  
 };
 
 
 /******************************************************************************/
 /*                           Function Prototypes                              */
 /******************************************************************************/
+/* Initializes various hardware componentsd */
 void init_hardware();
 void init_clock();
 void init_lcd();
 void init_light_sensor();
 void init_timers();
 
+/* Update the lux, adjust the backlight, and change rgb color */
 void update_lux();
 void adjust_lcd_backlight();
 void adjust_rgb_duty_cycle();
 
+/* draws accelerometer data */
 void draw_curr_accel_data();
 inline void draw_accel_x_max();
 inline void draw_accel_y_max();
 inline void draw_accel_z_max();
 
+/* maps accelerometer values [5000, 12000] to [0, TIMER_A0_PERIOD] */
 static uint32_t map_accel(uint32_t accel_cord);
-/* Functions to set flags */
-void adc_interrupt_func();
-void set_draw_accel_flag();
-void set_process_accel_data_flag();
 
+/* Attaches to ADC interrupt to set flags */
+void adc_interrupt_func();
+
+/* Determines maxes of accelerometer */
 void process_accelerometer();
 
 
 /*
- * Main function
+ * Processes set flags and then renables interrupts then goes to low power mode 0 */
  */
 int main(void)
 {
@@ -174,9 +186,11 @@ int main(void)
     /* Initialize hardware */
     init_hardware();
     Interrupt_disableSleepOnIsrExit();
+     
+    /* the loop of no return */
     while(1)
     {
-       //
+       
         if (flags.process_accel_data) {
             process_accelerometer();
             adjust_rgb_duty_cycle();
@@ -206,16 +220,24 @@ int main(void)
     }
 }
 
-
+/* 
+ * Calculates the filtered lux value using an exponential maf, then updates the current lux value
+ * There is a very unnoticable delay because of some weird issue I could never figure out.
+ * The filteredLux equation would never evaluate if OPT3001_getLux() was called before it.
+ * I tested using breakpoints, and so it never updated which is really strange.
+ */
 void update_lux()
 {
     filteredLux += floor((0.1)*(lux - filteredLux));
     lux = OPT3001_getLux();
 }
 
+/*
+ * The average lux value is under 2000. Only really bright direct light causes it to go above 2000
+ * This works by calculating the new duty cycle and then calling Timer_A_generatePWM()
+ */
 void adjust_lcd_backlight()
 {
-    /* Adjust LCD Backlight */
     if (filteredLux < 2000)
         lcdPWMConfig.dutyCycle = 210 - ((2000*0.1) + (filteredLux*0.9))/2000 * 200;
     else
@@ -223,6 +245,9 @@ void adjust_lcd_backlight()
     Timer_A_generatePWM(TIMER_A0_BASE, &lcdPWMConfig);
 }
 
+/*
+ * If a max is detected, it updates the max and sets the max flag
+ */
 void process_accelerometer()
 {
     if (accel_buffer.x > accel_max.x) {
@@ -239,6 +264,9 @@ void process_accelerometer()
     }
 }
 
+/*
+ * Updates the duty cycle using the map_accel() function
+ */
 void adjust_rgb_duty_cycle()
 {
     rgb_set_duty_cycle(RGB_DRIVER_RED,   map_accel(accel_buffer.x));
@@ -247,6 +275,10 @@ void adjust_rgb_duty_cycle()
     rgb_start(RGB_DRIVER_ALL);
 }
 
+/*
+ * Attaches to the ADC interrupt to set flags.
+ * Required because this would keep other interrupts from happening
+ */
 void adc_interrupt_func()
 {
     accel_buffer = (*curr_accel);
@@ -262,10 +294,12 @@ void adc_interrupt_func()
 
 
 
-
+/*
+ * Draws the accelerometer data.
+ * Only draws the max values as needed
+ */
 void draw_curr_accel_data()
 {
-
         sprintf(lcd_buffer, "X: %5d", accel_buffer.x);
         Graphics_drawStringCentered(&g_sContext, (int8_t *)lcd_buffer, 8, 64, 20, OPAQUE_TEXT);
 
@@ -291,16 +325,27 @@ void draw_curr_accel_data()
         }
 }
 
+/*
+ * Draws the max x acceleration value
+ */
 void draw_accel_x_max()
 {
     sprintf(lcd_buffer, "Max X: %5d", accel_max.x);
     Graphics_drawStringCentered(&g_sContext, (int8_t *)lcd_buffer, 13, 64, 60, OPAQUE_TEXT);
 }
+
+/*
+ * Draws the max y acceleration value
+ */
 void draw_accel_y_max()
 {
     sprintf(lcd_buffer, "Max Y: %5d", accel_max.y);
     Graphics_drawStringCentered(&g_sContext, (int8_t *)lcd_buffer, 13, 64, 70, OPAQUE_TEXT);
 }
+
+/*
+ * Draws the max z acceleration value
+ */
 void draw_accel_z_max()
 {
     sprintf(lcd_buffer, "Max Z: %5d", accel_max.z);
@@ -315,12 +360,13 @@ void draw_accel_z_max()
  */
 static uint32_t map_accel(uint32_t accel_cord)
 {
+    /* set boundaries */
     if (accel_cord < 5000)
         accel_cord = 5000;
     else if (accel_cord > 12000)
         accel_cord = 12000;
+    
     return (accel_cord - 5000) * (float)(rgb_get_period() - 0) / (12000 - 7000);
-
 }
 
 
@@ -330,6 +376,11 @@ static uint32_t map_accel(uint32_t accel_cord)
 /******************************************************************************/
 /*                          Initialize                                        */
 /******************************************************************************/
+
+/*
+ * Calls all hardware init functions
+ * Port maps lcd backlight - P2.6
+ */
 void init_hardware()
 {
     init_clock();
@@ -358,10 +409,15 @@ void init_hardware()
     init_buzzer(TIMER_A1_PERIOD, TIMER_A1_BASE, TIMER_A_CAPTURECOMPARE_REGISTER_1);
     init_light_sensor();
     __delay_cycles(100000);
-
-
 }
 
+/*
+ * MCU runs at 48MHz
+ * MCLK =
+ * SMCLK =
+ * HSMCLK = 
+ * ACLK =
+ */
 void init_clock()
 {
     /* Set the core voltage level to VCORE1 */
@@ -377,10 +433,11 @@ void init_clock()
     MAP_CS_initClockSignal(CS_HSMCLK, CS_DCOCLK_SELECT, CS_CLOCK_DIVIDER_1);
     MAP_CS_initClockSignal(CS_SMCLK, CS_DCOCLK_SELECT, CS_CLOCK_DIVIDER_1);
     MAP_CS_initClockSignal(CS_ACLK, CS_REFOCLK_SELECT, CS_CLOCK_DIVIDER_1);
-
-
 }
 
+/*
+ * Initializes lcd
+ */
 void init_lcd()
 {
     /* Initializes display */
@@ -399,7 +456,9 @@ void init_lcd()
 }
 
 
-
+/*
+ * Initializes light sensor
+ */
 void init_light_sensor()
 {
     /* Initialize I2C comm */
@@ -408,10 +467,12 @@ void init_light_sensor()
 
     /* Initialize OPT3001 digital ambient light sensor */
     OPT3001_init();
-
     __delay_cycles(100000);
 }
 
+/*
+ * Initializes timers
+ */
 void init_timers()
 {
     /* Configure PWM for LCD display */
@@ -423,12 +484,6 @@ void init_timers()
 }
 
 
-
-/*
- * Update lux and use a simple low pass filter
- */
-
-
 /******************************************************************************/
 /*                      Interrupt Handlers                                    */
 /******************************************************************************/
@@ -436,7 +491,6 @@ void init_timers()
 /*
  *  Timer A2 is used to check the light sensor and accelerometer for fall detection
  */
-
 void TA2_N_IRQHandler(void)
 {
     Timer_A_clearInterruptFlag(TIMER_A2_BASE);
@@ -464,7 +518,6 @@ void TA2_N_IRQHandler(void)
 
     }
 
-
     /* evaluate acceleration if accel_prev has been initialized */
     /* the values of +- 3000 were chosen by experimentation */
     /* the case of 12000 is there because a value that large is a result of large acceleration
@@ -484,11 +537,6 @@ void TA2_N_IRQHandler(void)
         }
         accel_prev = accel_buffer;
     }
-
-
-
-
-
     MAP_Interrupt_disableInterrupt(INT_TA2_N);
     MAP_Interrupt_disableMaster();
 }
