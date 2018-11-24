@@ -316,6 +316,8 @@ void draw_curr_accel_data()
             flags.draw_x_max = 0;
         }
         if (flags.draw_y_max) {
+
+
             draw_accel_y_max();
             flags.draw_y_max = 0;
         }
