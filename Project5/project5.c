@@ -16,7 +16,10 @@
 
 /* BIOS Header files */
 #include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Swi.h>
 #include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Clock.h>
+#include <ti/sysbios/knl/Semaphore.h>
 
 /* TI-RTOS Header files */
 /*
@@ -40,15 +43,21 @@
 
 /* Graphics library stuff */
 #include <grlib.h>
-#include <img/lotr_tree_splash_screen.h>
-#include <img/celtics_splash_screen.h>
 #include "HAL_I2C.h"
 #include "HAL_OPT3001.h"
 #include "LcdDriver/Crystalfontz128x128_ST7735.h"
 #include "LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h"
+#include <img/lotr_tree_splash_screen.h>
+#include <img/celtics_splash_screen.h>
 
 /* Board Header file */
 #include "Board.h"
+
+/*
+ * Headers to modularize specific board characteristics
+ */
+
+#include "clock.h"
 
 /* Image files */
 /* Graphic library context */
@@ -56,46 +65,12 @@ Graphics_Context g_sContext;
 
 #define TASKSTACKSIZE   512
 
-Task_Struct task0Struct;
-Char task0Stack[TASKSTACKSIZE];
+/* Clock Stuff */
+Clock_Struct clock_accel_struct, clock_splash_scrn_struct;
+Clock_Handle clk_handle; // not sure what this is used for yet
 
-/*
- *  ======== heartBeatFxn ========
- *  Toggle the Board_LED0. The Task_sleep is determined by arg0 which
- *  is configured for the heartBeat Task instance.
- */
-Void heartBeatFxn(UArg arg0, UArg arg1)
+Void LCD_init()
 {
-    while (1) {
-        Task_sleep((UInt)arg0);
-        GPIO_toggle(Board_LED0);
-    }
-}
-
-/*
- *  ======== main ========
- */
-int main(void)
-{
-    Task_Params taskParams;
-
-    /* Call board init functions */
-    Board_initGeneral();
-    Board_initGPIO();
-    // Board_initI2C();
-    // Board_initSDSPI();
-    // Board_initSPI();
-    // Board_initUART();
-    // Board_initWatchdog();
-    // Board_initWiFi();
-
-    /* Construct heartBeat Task  thread */
-    Task_Params_init(&taskParams);
-    taskParams.arg0 = 1000;
-    taskParams.stackSize = TASKSTACKSIZE;
-    taskParams.stack = &task0Stack;
-    Task_construct(&task0Struct, (Task_FuncPtr)heartBeatFxn, &taskParams, NULL);
-
     /* Initializes display */
     Crystalfontz128x128_Init();
 
@@ -109,10 +84,56 @@ int main(void)
     GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
     Graphics_clearDisplay(&g_sContext);
 
-    Graphics_drawImage(&g_sContext, &celtics_splash_screen, 0, 0);
+
 
     /* Turn on user LED */
-    GPIO_write(Board_LED0, Board_LED_ON);
+    GPIO_write(Board_LED0, Board_LED_OFF);
+}
+
+Void LCD_draw_splash_screen()
+{
+    Graphics_drawImage(&g_sContext, &lotr_tree_splash_screen_img, 0, 0);
+}
+
+Void CLK_read_accelerometer()
+{
+    GPIO_toggle(Board_LED0);
+}
+/*
+ *  ======== main ========
+ */
+int main(void)
+{
+
+    /* Call board init functions */
+    Board_initGeneral();
+    Board_initGPIO();
+    // Board_initI2C();
+    // Board_initSDSPI();
+    // Board_initSPI();
+    // Board_initUART();
+    // Board_initWatchdog();
+    // Board_initWiFi();
+    LCD_init();
+
+    /* Create one-shot clock for checking accelerometer values */
+    Clock_Params clk_params;
+    Clock_Params_init(&clk_params);
+    clk_params.period = 0;
+    clk_params.startFlag = TRUE;
+
+    /* Constructs a one-shot clock instance */
+    Clock_construct(&clock_splash_scrn_struct, (Clock_FuncPtr)LCD_draw_splash_screen,
+                    400000/Clock_tickPeriod, &clk_params);
+
+    /* Periodic stuff now */
+    clk_params.period = 400000 / Clock_tickPeriod;
+    clk_params.startFlag = TRUE;
+    Clock_construct(&clock_accel_struct, (Clock_FuncPtr)CLK_read_accelerometer, Clock_tickPeriod*5, &clk_params);
+
+
+
+
 
 
 
@@ -120,6 +141,7 @@ int main(void)
                   "Halt the target to view any SysMin contents in ROV.\n");
     /* SysMin will only print to the console when you call flush or exit */
     System_flush();
+
 
     /* Start BIOS */
     BIOS_start();
