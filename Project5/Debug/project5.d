@@ -1,6 +1,7 @@
 # FIXED
 
 project5.obj: ../project5.c
+project5.obj: ../project5.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/std.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/stdarg.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/sys/_types.h
@@ -84,6 +85,7 @@ project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_SupportProxy.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__prologue.h
@@ -98,12 +100,28 @@ project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__epilogue.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
-project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/Hwi.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/package.defs.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/Hwi__prologue.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/package/package.defs.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/package/package.defs.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/Hwi__epilogue.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/package/package.defs.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
@@ -119,6 +137,20 @@ project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log__epilogue.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/package.defs.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
@@ -137,7 +169,6 @@ project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/t
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/ITaskSupport.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/package/package.defs.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Clock.h
@@ -227,6 +258,8 @@ project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_0
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/uart.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/wdt_a.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/GPIO.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ADC.h
+project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/PWM.h
 project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/assert.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/_ti_config.h
@@ -238,13 +271,12 @@ project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
 project5.obj: ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h
 project5.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project5/img/lotr_tree_splash_screen.h
 project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
-project5.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project5/img/celtics_splash_screen.h
-project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
 project5.obj: ../Board.h
 project5.obj: ../MSP_EXP432P401R.h
-project5.obj: ../clock.h
+project5.obj: ../buzzer_driver.h
 
 ../project5.c: 
+../project5.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/std.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/stdarg.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/sys/_types.h: 
@@ -328,6 +360,7 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_SupportProxy.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__prologue.h: 
@@ -342,12 +375,28 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__epilogue.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
-C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/Hwi.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/package.defs.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/Hwi__prologue.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/package/package.defs.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/package/package.defs.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/Hwi__epilogue.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/package/package.defs.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
@@ -363,6 +412,20 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log__epilogue.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/IHwi.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Swi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/package/package.defs.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Queue.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
@@ -381,7 +444,6 @@ C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/ITaskSupport.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/interfaces/package/package.defs.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/knl/Clock.h: 
@@ -471,6 +533,8 @@ C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MS
 C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/uart.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/wdt_a.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/GPIO.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ADC.h: 
+C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/PWM.h: 
 C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/assert.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/_ti_config.h: 
@@ -482,8 +546,6 @@ C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h:
 ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/Project5/img/lotr_tree_splash_screen.h: 
 C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h: 
-C:/Users/druep/Documents/EEL4930_AdvMCU/Project5/img/celtics_splash_screen.h: 
-C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h: 
 ../Board.h: 
 ../MSP_EXP432P401R.h: 
-../clock.h: 
+../buzzer_driver.h: 

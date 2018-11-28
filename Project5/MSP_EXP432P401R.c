@@ -75,12 +75,12 @@ ADCMSP432_Object adcMSP432Objects[MSP_EXP432P401R_ADCCOUNT];
 /* ADC configuration structure */
 const ADCMSP432_HWAttrs adcMSP432HWAttrs[MSP_EXP432P401R_ADCCOUNT] = {
     {
-        .channel = ADC_INPUT_A0,
+        .channel = ADC_INPUT_A1,
         .gpioPort = GPIO_PORT_P5,
         .gpioPin = GPIO_PIN5,
         .gpioMode = GPIO_TERTIARY_MODULE_FUNCTION,
         .refVoltage = REF_A_VREF2_5V,
-        .resolution = ADC_14BIT
+        .resolution = ADC_8BIT
     },
     {
         .channel = ADC_INPUT_A1,
@@ -89,19 +89,61 @@ const ADCMSP432_HWAttrs adcMSP432HWAttrs[MSP_EXP432P401R_ADCCOUNT] = {
         .gpioMode = GPIO_TERTIARY_MODULE_FUNCTION,
         .refVoltage = REF_A_VREF1_45V,
         .resolution = ADC_8BIT
+    },
+    // adc channel 11
+    {
+         .channel = ADC_INPUT_A11,
+         .gpioPort = GPIO_PORT_P4,
+         .gpioPin = GPIO_PIN2,
+         .gpioMode = GPIO_TERTIARY_MODULE_FUNCTION,
+         .refVoltage = REF_A_VREF2_5V,
+         .resolution = ADC_14BIT
+    },
+    // adc channel 13
+    {
+         .channel = ADC_INPUT_A13,
+         .gpioPort = GPIO_PORT_P4,
+         .gpioPin = GPIO_PIN0,
+         .gpioMode = GPIO_TERTIARY_MODULE_FUNCTION,
+         .refVoltage = REF_A_VREF2_5V,
+         .resolution = ADC_14BIT
+    },
+    // adc channel 14
+    {
+         .channel = ADC_INPUT_A14,
+         .gpioPort = GPIO_PORT_P6,
+         .gpioPin = GPIO_PIN1,
+         .gpioMode = GPIO_TERTIARY_MODULE_FUNCTION,
+         .refVoltage = REF_A_VREF2_5V,
+         .resolution = ADC_14BIT
     }
 };
 
 const ADC_Config ADC_config[] = {
     {
         .fxnTablePtr = &ADCMSP432_fxnTable,
-        .object = &adcMSP432Objects[0],
-        .hwAttrs = &adcMSP432HWAttrs[0]
+        .object = &adcMSP432Objects[MSP_EXP432P401R_ADC0],
+        .hwAttrs = &adcMSP432HWAttrs[MSP_EXP432P401R_ADC0]
     },
     {
         .fxnTablePtr = &ADCMSP432_fxnTable,
-        .object = &adcMSP432Objects[1],
-        .hwAttrs = &adcMSP432HWAttrs[1]
+        .object = &adcMSP432Objects[MSP_EXP432P401R_ADC1],
+        .hwAttrs = &adcMSP432HWAttrs[MSP_EXP432P401R_ADC1]
+    },
+    {
+     .fxnTablePtr = &ADCMSP432_fxnTable,
+     .object = &adcMSP432Objects[MSP_EXP432P401R_ADC11],
+     .hwAttrs = &adcMSP432HWAttrs[MSP_EXP432P401R_ADC11]
+    },
+    {
+     .fxnTablePtr = &ADCMSP432_fxnTable,
+     .object = &adcMSP432Objects[MSP_EXP432P401R_ADC13],
+     .hwAttrs = &adcMSP432HWAttrs[MSP_EXP432P401R_ADC13]
+    },
+    {
+     .fxnTablePtr = &ADCMSP432_fxnTable,
+     .object = &adcMSP432Objects[MSP_EXP432P401R_ADC14],
+     .hwAttrs = &adcMSP432HWAttrs[MSP_EXP432P401R_ADC14]
     },
     {NULL, NULL, NULL}
 };
@@ -189,6 +231,10 @@ GPIO_PinConfig gpioPinConfigs[] = {
     GPIOMSP432_P1_1 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
     /* MSP_EXP432P401R_S2 */
     GPIOMSP432_P1_4 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
+    /* Booster pack button 1 */
+    GPIOMSP432_P5_1 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
+    /* Booster Pack button 2*/
+    GPIOMSP432_P3_5 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
 
     /* Output pins */
     /* MSP_EXP432P401R_LED1 */
@@ -331,6 +377,15 @@ const PWMTimerMSP432_HWAttrsV1 pwmTimerMSP432HWAttrs[MSP_EXP432P401R_PWMCOUNT] =
         .gpioPort = GPIO_PORT_P2,
         .gpioPinIndex = GPIO_PIN2,
         .pwmMode = GPIO_PRIMARY_MODULE_FUNCTION
+    },
+    // buzzer on pin 2.7 which uses
+    {
+         .timerBaseAddr = TIMER_A0_BASE,
+         .clockSource = TIMER_A_CLOCKSOURCE_ACLK,
+         .compareRegister = TIMER_A_CAPTURECOMPARE_REGISTER_4,
+         .gpioPort = GPIO_PORT_P2,
+         .gpioPinIndex = GPIO_PIN7,
+         .pwmMode = GPIO_PRIMARY_MODULE_FUNCTION
     }
 };
 
@@ -345,6 +400,11 @@ const PWM_Config PWM_config[] = {
         .object = &pwmTimerMSP432Objects[1],
         .hwAttrs = &pwmTimerMSP432HWAttrs[1]
     },
+    {
+        .fxnTablePtr = &PWMTimerMSP432_fxnTable,
+        .object = &pwmTimerMSP432Objects[2],
+        .hwAttrs = &pwmTimerMSP432HWAttrs[2]
+    },
     {NULL, NULL, NULL}
 };
 
@@ -354,14 +414,14 @@ const PWM_Config PWM_config[] = {
 void MSP_EXP432P401R_initPWM(void)
 {
     /* Use Port Map on Port2 get Timer outputs on pins with LEDs (2.1, 2.2) */
-    const uint8_t portMap [] = {
+    /*const uint8_t portMap [] = {
         PM_NONE, PM_TA1CCR1A, PM_TA1CCR2A, PM_NONE,
         PM_NONE, PM_NONE,     PM_NONE,     PM_NONE
     };
-
-    /* Mapping capture compare registers to Port 2 */
+*/
+    /* Mapping capture compare registers to Port 2
     MAP_PMAP_configurePorts((const uint8_t *) portMap, PMAP_P2MAP, 1,
-        PMAP_DISABLE_RECONFIGURATION);
+        PMAP_DISABLE_RECONFIGURATION)*/
 
     PWM_init();
 }

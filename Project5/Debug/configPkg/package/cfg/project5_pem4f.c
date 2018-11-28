@@ -2593,11 +2593,11 @@ ti_sysbios_family_arm_m3_Hwi_Module__ ti_sysbios_family_arm_m3_Hwi_Module__root_
 ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table__V[1] = {
     {/* instance#0 */
         0,
-        ((xdc_UArg)(0x0)),  /* arg */
+        ((xdc_UArg)(0x1)),  /* arg */
         ((xdc_Void(*)(xdc_UArg))((xdc_Fxn)ti_sysbios_family_arm_msp432_Timer_periodicStub__E)),  /* fxn */
         ((xdc_UArg)(0x3)),  /* irp */
         (xdc_UInt8)0xff,  /* priority */
-        (xdc_Int16)0x18,  /* intNum */
+        (xdc_Int16)0x1a,  /* intNum */
         ((void*)0),  /* hookEnv */
     },
 };
@@ -2633,7 +2633,7 @@ ti_sysbios_family_arm_m3_Hwi_Module_State__ ti_sysbios_family_arm_m3_Hwi_Module_
     ((void*)ti_sysbios_family_arm_m3_Hwi_Module_State_0_excStack__A),  /* excStack */
     ((xdc_Ptr)0),  /* isrStack */
     ((xdc_Ptr)((void*)&__TI_STACK_BASE)),  /* isrStackBase */
-    (xdc_SizeT)0x300,  /* isrStackSize */
+    (xdc_SizeT)0x7d0,  /* isrStackSize */
     ((xdc_Ptr)(0x20000000)),  /* vectorTableBase */
     (xdc_UInt)0x101,  /* swiTaskKeys */
     ((xdc_Ptr)((void*)&ti_sysbios_family_arm_m3_Hwi_dispatchTable[0])),  /* dispatchTable */
@@ -2723,7 +2723,7 @@ __FAR__ const CT__ti_sysbios_family_arm_m3_Hwi_Object__table ti_sysbios_family_a
 
 /* dispatcherAutoNestingSupport__C */
 #pragma DATA_SECTION(ti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport__C, ".const:ti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport__C");
-__FAR__ const CT__ti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport ti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport__C = 1;
+__FAR__ const CT__ti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport ti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport__C = 0;
 
 /* dispatcherSwiSupport__C */
 #pragma DATA_SECTION(ti_sysbios_family_arm_m3_Hwi_dispatcherSwiSupport__C, ".const:ti_sysbios_family_arm_m3_Hwi_dispatcherSwiSupport__C");
@@ -3172,13 +3172,13 @@ ti_sysbios_family_arm_msp432_Timer_Object__ ti_sysbios_family_arm_msp432_Timer_O
     {/* instance#0 */
         0,
         1,  /* staticInst */
-        (xdc_Int)0x0,  /* id */
+        (xdc_Int)0x1,  /* id */
         (xdc_UInt)0x100,  /* controlRegInit */
         ti_sysbios_interfaces_ITimer_RunMode_CONTINUOUS,  /* runMode */
         ti_sysbios_interfaces_ITimer_StartMode_AUTO,  /* startMode */
         (xdc_UInt)0x20,  /* period */
         ti_sysbios_interfaces_ITimer_PeriodType_COUNTS,  /* periodType */
-        (xdc_UInt)0x18,  /* intNum */
+        (xdc_UInt)0x1a,  /* intNum */
         ((xdc_UArg)0),  /* arg */
         ((xdc_Void(*)(xdc_UArg))((xdc_Fxn)ti_sysbios_knl_Clock_doTick__I)),  /* tickFxn */
         {
@@ -3217,8 +3217,8 @@ __T1_ti_sysbios_family_arm_msp432_Timer_Module_State__device ti_sysbios_family_a
 
 /* --> ti_sysbios_family_arm_msp432_Timer_Module_State_0_handles__A */
 __T1_ti_sysbios_family_arm_msp432_Timer_Module_State__handles ti_sysbios_family_arm_msp432_Timer_Module_State_0_handles__A[4] = {
-    (ti_sysbios_family_arm_msp432_Timer_Handle)&ti_sysbios_family_arm_msp432_Timer_Object__table__V[0],  /* [0] */
-    0,  /* [1] */
+    0,  /* [0] */
+    (ti_sysbios_family_arm_msp432_Timer_Handle)&ti_sysbios_family_arm_msp432_Timer_Object__table__V[0],  /* [1] */
     0,  /* [2] */
     0,  /* [3] */
 };
@@ -3233,7 +3233,7 @@ ti_sysbios_family_arm_msp432_Timer_Module_State__ ti_sysbios_family_arm_msp432_T
 #endif
 #endif
 ti_sysbios_family_arm_msp432_Timer_Module_State__ ti_sysbios_family_arm_msp432_Timer_Module__state__V = {
-    (xdc_UInt)0xe,  /* availMask */
+    (xdc_UInt)0xd,  /* availMask */
     ((void*)ti_sysbios_family_arm_msp432_Timer_Module_State_0_device__A),  /* device */
     ((void*)ti_sysbios_family_arm_msp432_Timer_Module_State_0_handles__A),  /* handles */
 };
@@ -3762,7 +3762,7 @@ __FAR__ const CT__ti_sysbios_hal_Hwi_Object__table ti_sysbios_hal_Hwi_Object__ta
 
 /* dispatcherAutoNestingSupport__C */
 #pragma DATA_SECTION(ti_sysbios_hal_Hwi_dispatcherAutoNestingSupport__C, ".const:ti_sysbios_hal_Hwi_dispatcherAutoNestingSupport__C");
-__FAR__ const CT__ti_sysbios_hal_Hwi_dispatcherAutoNestingSupport ti_sysbios_hal_Hwi_dispatcherAutoNestingSupport__C = 1;
+__FAR__ const CT__ti_sysbios_hal_Hwi_dispatcherAutoNestingSupport ti_sysbios_hal_Hwi_dispatcherAutoNestingSupport__C = 0;
 
 /* dispatcherSwiSupport__C */
 #pragma DATA_SECTION(ti_sysbios_hal_Hwi_dispatcherSwiSupport__C, ".const:ti_sysbios_hal_Hwi_dispatcherSwiSupport__C");
@@ -4105,7 +4105,7 @@ __FAR__ const CT__ti_sysbios_knl_Clock_tickMode ti_sysbios_knl_Clock_tickMode__C
 
 /* timerId__C */
 #pragma DATA_SECTION(ti_sysbios_knl_Clock_timerId__C, ".const:ti_sysbios_knl_Clock_timerId__C");
-__FAR__ const CT__ti_sysbios_knl_Clock_timerId ti_sysbios_knl_Clock_timerId__C = (xdc_UInt)(-0x0 - 1);
+__FAR__ const CT__ti_sysbios_knl_Clock_timerId ti_sysbios_knl_Clock_timerId__C = (xdc_UInt)0x1;
 
 /* tickPeriod__C */
 #pragma DATA_SECTION(ti_sysbios_knl_Clock_tickPeriod__C, ".const:ti_sysbios_knl_Clock_tickPeriod__C");

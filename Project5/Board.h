@@ -52,6 +52,9 @@ extern "C" {
 
 #define Board_ADC0                  MSP_EXP432P401R_ADC0
 #define Board_ADC1                  MSP_EXP432P401R_ADC1
+#define Board_ADC11                 MSP_EXP432P401R_ADC11
+#define Board_ADC13                 MSP_EXP432P401R_ADC13
+#define Board_ADC14                 MSP_EXP432P401R_ADC14
 
 #define Board_LED_ON                MSP_EXP432P401R_LED_ON
 #define Board_LED_OFF               MSP_EXP432P401R_LED_OFF
@@ -61,6 +64,8 @@ extern "C" {
 #define Board_LED0                  MSP_EXP432P401R_LED1
 #define Board_LED1                  MSP_EXP432P401R_LED_RED
 #define Board_LED2                  MSP_EXP432P401R_LED_RED
+#define Booster_BUTTON1             BP_S1
+#define Booster_BUTTON2             BP_S2
 
 /*
  * MSP_EXP432P401R_LED_GREEN & MSP_EXP432P401R_LED_BLUE are used for
@@ -77,6 +82,7 @@ extern "C" {
 
 #define Board_PWM0                  MSP_EXP432P401R_PWM_TA1_1
 #define Board_PWM1                  MSP_EXP432P401R_PWM_TA1_2
+#define Booster_BUZZER_PWM          BP_BUZZER
 
 #define Board_SDSPI0                MSP_EXP432P401R_SDSPIB0
 
