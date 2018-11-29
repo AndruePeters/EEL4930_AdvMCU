@@ -37,7 +37,7 @@
 
 #include "HAL_TMP006.h"
 #include "HAL_I2C.h"
-#include <ti/devices/msp432p4xx/driverlib/driverlib.h>
+#include <driverlib.h>
 #include "math.h"
 
 /* Calibration constant for TMP006 */

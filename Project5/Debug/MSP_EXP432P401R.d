@@ -40,7 +40,7 @@ MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_
 MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/interrupt.h
 MSP_EXP432P401R.obj: ../MSP_EXP432P401R.h
 MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ADC.h
-MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/adc/ADCMSP432.h
+MSP_EXP432P401R.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/Project5/ADCMSP432.h
 MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ports/HwiP.h
 MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ports/SemaphoreP.h
 MSP_EXP432P401R.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/dma/UDMAMSP432.h
@@ -207,7 +207,7 @@ C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MS
 C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/interrupt.h: 
 ../MSP_EXP432P401R.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ADC.h: 
-C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/adc/ADCMSP432.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/Project5/ADCMSP432.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ports/HwiP.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ports/SemaphoreP.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/dma/UDMAMSP432.h: 

@@ -67,7 +67,7 @@
 #endif
 
 #include <ti/drivers/ADC.h>
-#include <ti/drivers/adc/ADCMSP432.h>
+#include <ADCMSP432.h>
 
 /* ADC objects */
 ADCMSP432_Object adcMSP432Objects[MSP_EXP432P401R_ADCCOUNT];
@@ -264,6 +264,10 @@ GPIO_CallbackFxn gpioCallbackFunctions[] = {
     /* MSP_EXP432P401R_S1 */
     NULL,
     /* MSP_EXP432P401R_S2 */
+    NULL,
+    /* BP_S1 */
+    NULL,
+    /* BP_S2 */
     NULL
 };
 

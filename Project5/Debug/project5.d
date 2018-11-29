@@ -86,6 +86,19 @@ project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_SupportProxy.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Timestamp.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampClient.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampProvider.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampClient.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/Timestamp_SupportProxy.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampProvider.h
+project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/Timestamp_SupportProxy.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h
 project5.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 project5.obj: C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__prologue.h
@@ -264,8 +277,7 @@ project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/assert.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/_ti_config.h
 project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/linkage.h
-project5.obj: ../HAL_I2C.h
-project5.obj: ../HAL_OPT3001.h
+project5.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/stdio.h
 project5.obj: ../LcdDriver/Crystalfontz128x128_ST7735.h
 project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
 project5.obj: ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h
@@ -274,6 +286,8 @@ project5.obj: C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h
 project5.obj: ../Board.h
 project5.obj: ../MSP_EXP432P401R.h
 project5.obj: ../buzzer_driver.h
+project5.obj: ../HAL_I2C.h
+project5.obj: ../HAL_TMP006.h
 
 ../project5.c: 
 ../project5.h: 
@@ -361,6 +375,19 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_SupportProxy.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/System_Module_GateProxy.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Timestamp.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampClient.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampProvider.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampClient.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/Timestamp_SupportProxy.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/ITimestampProvider.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/package/Timestamp_SupportProxy.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/BIOS__prologue.h: 
@@ -539,8 +566,7 @@ C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h:
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/assert.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/_ti_config.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/linkage.h: 
-../HAL_I2C.h: 
-../HAL_OPT3001.h: 
+C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include/stdio.h: 
 ../LcdDriver/Crystalfontz128x128_ST7735.h: 
 C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h: 
 ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h: 
@@ -549,3 +575,5 @@ C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib/grlib.h:
 ../Board.h: 
 ../MSP_EXP432P401R.h: 
 ../buzzer_driver.h: 
+../HAL_I2C.h: 
+../HAL_TMP006.h: 

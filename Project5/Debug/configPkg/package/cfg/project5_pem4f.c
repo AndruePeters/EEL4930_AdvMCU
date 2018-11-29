@@ -108,6 +108,7 @@ typedef struct ti_sysbios_knl_Semaphore_Object__ {
     ti_sysbios_knl_Semaphore_Mode mode;
     volatile xdc_UInt16 count;
     ti_sysbios_knl_Queue_Object__ Object_field_pendQ;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_knl_Semaphore_Object__;
 
 /* @@@ ti_sysbios_knl_Semaphore_Object2__ */
@@ -121,6 +122,7 @@ typedef struct ti_sysbios_gates_GateMutex_Object__ {
     const ti_sysbios_gates_GateMutex_Fxns__ *__fxns;
     ti_sysbios_knl_Task_Handle owner;
     ti_sysbios_knl_Semaphore_Object__ Object_field_sem;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_gates_GateMutex_Object__;
 
 /* Object2__ */
@@ -167,6 +169,7 @@ typedef struct ti_sysbios_family_arm_m3_Hwi_Object__ {
     xdc_UInt8 priority;
     xdc_Int16 intNum;
     __TA_ti_sysbios_family_arm_m3_Hwi_Instance_State__hookEnv hookEnv;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_family_arm_m3_Hwi_Object__;
 
 /* Object2__ */
@@ -231,6 +234,7 @@ typedef struct ti_sysbios_family_arm_msp432_Timer_Object__ {
     xdc_Bool synchronous;
     xdc_UInt inputDivider;
     xdc_UInt inputDividerExp;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_family_arm_msp432_Timer_Object__;
 
 /* Object2__ */
@@ -267,6 +271,7 @@ extern ti_sysbios_gates_GateHwi_Module__ ti_sysbios_gates_GateHwi_Module__root__
 /* Object__ */
 typedef struct ti_sysbios_gates_GateHwi_Object__ {
     const ti_sysbios_gates_GateHwi_Fxns__ *__fxns;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_gates_GateHwi_Object__;
 
 /* Object2__ */
@@ -321,6 +326,7 @@ extern ti_sysbios_hal_Hwi_Module__ ti_sysbios_hal_Hwi_Module__root__V;
 typedef struct ti_sysbios_hal_Hwi_Object__ {
     const ti_sysbios_hal_Hwi_Fxns__ *__fxns;
     ti_sysbios_hal_Hwi_HwiProxy_Handle pi;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_hal_Hwi_Object__;
 
 /* Object2__ */
@@ -387,6 +393,7 @@ typedef struct ti_sysbios_heaps_HeapMem_Object__ {
     __TA_ti_sysbios_heaps_HeapMem_Instance_State__buf buf;
     ti_sysbios_heaps_HeapMem_Header head;
     xdc_SizeT minBlockAlign;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_heaps_HeapMem_Object__;
 
 /* Object2__ */
@@ -457,6 +464,7 @@ typedef struct ti_sysbios_knl_Clock_Object__ {
     volatile xdc_Bool active;
     ti_sysbios_knl_Clock_FuncPtr fxn;
     xdc_UArg arg;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_knl_Clock_Object__;
 
 /* Object2__ */
@@ -588,6 +596,7 @@ typedef struct ti_sysbios_knl_Swi_Object__ {
     xdc_UInt trigger;
     ti_sysbios_knl_Queue_Handle readyQ;
     __TA_ti_sysbios_knl_Swi_Instance_State__hookEnv hookEnv;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_knl_Swi_Object__;
 
 /* Object2__ */
@@ -638,6 +647,7 @@ typedef struct ti_sysbios_knl_Task_Object__ {
     ti_sysbios_knl_Queue_Handle readyQ;
     xdc_UInt curCoreId;
     xdc_UInt affinity;
+    xdc_runtime_Types_CordAddr __name;
 } ti_sysbios_knl_Task_Object__;
 
 /* Object2__ */
@@ -1746,67 +1756,6 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
         c = *fmt++;
         *pfmt = *pfmt + 1;
         
-        if (c == 'L') {
-            xdc_runtime_Types_Label *lab = parse->aFlag ? 
-                (xdc_runtime_Types_Label *)xdc_iargToPtr(va_arg(va, xdc_IArg)) :
-                (xdc_runtime_Types_Label *)va_arg(va, void *);
-            
-            /* 
-             * Call Text_putLab to write out the label, taking the precision 
-             * into account.
-             */
-            res = xdc_runtime_Text_putLab(lab, pbuf, parse->precis);
-            
-            /*
-             * Set the length to 0 to indicate to 'doPrint' that nothing should
-             * be copied from parse.ptr.
-             */
-            parse->len = 0;
-            
-            /* Update the minimum width field. */
-            parse->width -= res;
-            
-            found = TRUE;
-        }
-        
-        if (c == 'F') {
-            xdc_runtime_Types_Site site;
-            
-            /* Retrieve the file name string from the argument list */
-            site.file = parse->aFlag ? (xdc_Char *) xdc_iargToPtr(va_arg(va, xdc_IArg)) :
-                                       (xdc_Char *) va_arg(va, xdc_Char *);
-            
-            /* Retrieve the line number from the argument list. */
-            site.line = parse->aFlag ? (xdc_Int) va_arg(va, xdc_IArg) : 
-                                       (xdc_Int) va_arg(va, xdc_Int);
-            
-            /* 
-             * Omit the 'mod' field, set it to 0.
-             * '0' is a safe sentinel value - the IDs for named modules are 
-             * 0x8000 and higher, and the IDs for unnamed modules go from 0x1
-             * to 0x7fff.
-             */
-            site.mod = 0;
-            
-            /* 
-             * Call putSite to format the file and line number.
-             * If a precision was specified, it will be used as the maximum
-             * string lengrth.
-             */
-            res = xdc_runtime_Text_putSite(&site, pbuf, parse->precis);
-            
-            /*
-             * Set the length to 0 to indicate to 'doPrint' that nothing should
-             * be copied from parse.ptr.
-             */
-            parse->len = 0;
-       
-            /* Update the minimum width field */
-            parse->width -= res;
-            
-            found = TRUE;
-        }
-        
         if (c == 'S') {
             /* Retrieve the format string from the argument list */
             parse->ptr = parse->aFlag ? 
@@ -1845,14 +1794,66 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
     }
 
     if (c == 'f') {
-        /* support arguments _after_ optional float support */
+        xdc_Double d, tmp;
+        xdc_runtime_System_UNum  fract;
+        xdc_Int    negative;
+
         if (parse->aFlag) {
-            (void)va_arg(va, xdc_IArg);
+            xdc_runtime_Assert_isTrue((sizeof(xdc_Float) <= sizeof(xdc_IArg)), 
+                xdc_runtime_System_A_cannotFitIntoArg);
+
+            d = argToFloat(va_arg(va, xdc_IArg));
         }
         else {
-            (void)va_arg(va, double);
+            d = va_arg(va, double);
         }
-    }    
+
+        if (d < 0.0) {
+            d = -d;
+            negative = TRUE;
+            parse->zpad--;
+        }
+        else {
+            negative = FALSE;
+        }
+
+        /*
+         * output (error) if we can't print correct value
+         */
+        if (d > (double) LONG_MAX) {
+            parse->ptr = "(error)";
+            parse->len = 7;                /* strlen("(error)"); */
+            goto end;
+        }
+
+        /* Assumes four digits after decimal point. We are using a temporary
+         * double variable to force double-precision computations without 
+         * using --fp_mode=strict flag. See the description of that flag in
+         * the compiler's doc for a further explanation.
+         */
+        tmp = (d - (xdc_runtime_System_INum)d) * 1e4;
+        fract = (xdc_runtime_System_UNum)tmp;
+
+        parse->ptr = xdc_runtime_System_formatNum__I(parse->end, fract, 4, 10);
+        *(--parse->ptr) = '.';
+
+#if 0
+        /* eliminate trailing zeros */
+        do {
+        } while (*(--parse->end) == '0');
+        ++parse->end;
+#endif
+        parse->len = parse->end - parse->ptr;
+        /* format integer part (right to left!) */
+        parse->ptr = xdc_runtime_System_formatNum__I(parse->ptr,
+            (xdc_runtime_System_INum)d, parse->zpad - parse->len, 10);
+        if (negative) {
+            *(--parse->ptr) = '-';
+        }
+
+        parse->len = parse->end - parse->ptr;
+        found = TRUE;
+    }
 
     if (found == FALSE) {
         /* other character (like %) copy to output */
@@ -2599,6 +2600,7 @@ ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table
         (xdc_UInt8)0xff,  /* priority */
         (xdc_Int16)0x1a,  /* intNum */
         ((void*)0),  /* hookEnv */
+        0 /* __name */
     },
 };
 
@@ -3192,6 +3194,7 @@ ti_sysbios_family_arm_msp432_Timer_Object__ ti_sysbios_family_arm_msp432_Timer_O
         0,  /* synchronous */
         (xdc_UInt)0x0,  /* inputDivider */
         (xdc_UInt)0x0,  /* inputDividerExp */
+        0 /* __name */
     },
 };
 
@@ -3442,6 +3445,7 @@ ti_sysbios_gates_GateHwi_Module__ ti_sysbios_gates_GateHwi_Module__root__V = {
 ti_sysbios_gates_GateHwi_Object__ ti_sysbios_gates_GateHwi_Object__table__V[1] = {
     {/* instance#0 */
         &ti_sysbios_gates_GateHwi_Module__FXNS__C,
+        0 /* __name */
     },
 };
 
@@ -3560,7 +3564,9 @@ ti_sysbios_gates_GateMutex_Object__ ti_sysbios_gates_GateMutex_Object__table__V[
                     ((ti_sysbios_knl_Queue_Elem*)((void*)&ti_sysbios_gates_GateMutex_Object__table__V[0].Object_field_sem.Object_field_pendQ.elem)),  /* prev */
                 },  /* elem */
             },  /* Object_field_pendQ */
+            0 /* __name */
         },  /* Object_field_sem */
+        0 /* __name */
     },
     {/* instance#1 */
         &ti_sysbios_gates_GateMutex_Module__FXNS__C,
@@ -3576,7 +3582,9 @@ ti_sysbios_gates_GateMutex_Object__ ti_sysbios_gates_GateMutex_Object__table__V[
                     ((ti_sysbios_knl_Queue_Elem*)((void*)&ti_sysbios_gates_GateMutex_Object__table__V[1].Object_field_sem.Object_field_pendQ.elem)),  /* prev */
                 },  /* elem */
             },  /* Object_field_pendQ */
+            0 /* __name */
         },  /* Object_field_sem */
+        0 /* __name */
     },
 };
 
@@ -3829,6 +3837,7 @@ ti_sysbios_heaps_HeapMem_Object__ ti_sysbios_heaps_HeapMem_Object__table__V[1] =
             ((xdc_UArg)(0x400)),  /* size */
         },  /* head */
         (xdc_SizeT)0x8,  /* minBlockAlign */
+        0 /* __name */
     },
 };
 
@@ -4598,6 +4607,7 @@ ti_sysbios_knl_Swi_Object__ ti_sysbios_knl_Swi_Object__table__V[1] = {
         (xdc_UInt)0x0,  /* trigger */
         (ti_sysbios_knl_Queue_Handle)&ti_sysbios_knl_Swi_Module_State_0_readyQ__A[15],  /* readyQ */
         ((void*)0),  /* hookEnv */
+        0 /* __name */
     },
 };
 
@@ -4895,6 +4905,7 @@ ti_sysbios_knl_Task_Object__ ti_sysbios_knl_Task_Object__table__V[1] = {
         0,  /* readyQ */
         (xdc_UInt)0x0,  /* curCoreId */
         (xdc_UInt)0x0,  /* affinity */
+        (xdc_runtime_Text_CordAddr)(xdc_runtime_Text_charTab__A+6142) /* __name */
     },
 };
 
@@ -14005,7 +14016,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_family_arm_m3_Hwi_Object__DESC
     &ti_sysbios_family_arm_m3_Hwi_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_family_arm_m3_Hwi___S1) - sizeof(ti_sysbios_family_arm_m3_Hwi_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_family_arm_m3_Hwi_Object__, __name), /* objName */
     sizeof(ti_sysbios_family_arm_m3_Hwi_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_family_arm_m3_Hwi_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_family_arm_m3_Hwi_Params), /* prmsSize */
@@ -14024,7 +14035,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_family_arm_msp432_Timer_Object
     &ti_sysbios_family_arm_msp432_Timer_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_family_arm_msp432_Timer___S1) - sizeof(ti_sysbios_family_arm_msp432_Timer_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_family_arm_msp432_Timer_Object__, __name), /* objName */
     sizeof(ti_sysbios_family_arm_msp432_Timer_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_family_arm_msp432_Timer_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_family_arm_msp432_Timer_Params), /* prmsSize */
@@ -14043,7 +14054,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_gates_GateHwi_Object__DESC__C 
     &ti_sysbios_gates_GateHwi_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_gates_GateHwi___S1) - sizeof(ti_sysbios_gates_GateHwi_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_gates_GateHwi_Object__, __name), /* objName */
     sizeof(ti_sysbios_gates_GateHwi_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_gates_GateHwi_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_gates_GateHwi_Params), /* prmsSize */
@@ -14062,7 +14073,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_gates_GateMutex_Object__DESC__
     &ti_sysbios_gates_GateMutex_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_gates_GateMutex___S1) - sizeof(ti_sysbios_gates_GateMutex_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_gates_GateMutex_Object__, __name), /* objName */
     sizeof(ti_sysbios_gates_GateMutex_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_gates_GateMutex_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_gates_GateMutex_Params), /* prmsSize */
@@ -14081,7 +14092,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_hal_Hwi_Object__DESC__C = {
     &ti_sysbios_hal_Hwi_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_hal_Hwi___S1) - sizeof(ti_sysbios_hal_Hwi_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_hal_Hwi_Object__, __name), /* objName */
     sizeof(ti_sysbios_hal_Hwi_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_hal_Hwi_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_hal_Hwi_Params), /* prmsSize */
@@ -14100,7 +14111,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_heaps_HeapMem_Object__DESC__C 
     &ti_sysbios_heaps_HeapMem_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_heaps_HeapMem___S1) - sizeof(ti_sysbios_heaps_HeapMem_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_heaps_HeapMem_Object__, __name), /* objName */
     sizeof(ti_sysbios_heaps_HeapMem_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_heaps_HeapMem_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_heaps_HeapMem_Params), /* prmsSize */
@@ -14119,7 +14130,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_knl_Clock_Object__DESC__C = {
     &ti_sysbios_knl_Clock_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_knl_Clock___S1) - sizeof(ti_sysbios_knl_Clock_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_knl_Clock_Object__, __name), /* objName */
     sizeof(ti_sysbios_knl_Clock_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_knl_Clock_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_knl_Clock_Params), /* prmsSize */
@@ -14157,7 +14168,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_knl_Semaphore_Object__DESC__C 
     &ti_sysbios_knl_Semaphore_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_knl_Semaphore___S1) - sizeof(ti_sysbios_knl_Semaphore_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_knl_Semaphore_Object__, __name), /* objName */
     sizeof(ti_sysbios_knl_Semaphore_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_knl_Semaphore_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_knl_Semaphore_Params), /* prmsSize */
@@ -14176,7 +14187,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_knl_Swi_Object__DESC__C = {
     &ti_sysbios_knl_Swi_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_knl_Swi___S1) - sizeof(ti_sysbios_knl_Swi_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_knl_Swi_Object__, __name), /* objName */
     sizeof(ti_sysbios_knl_Swi_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_knl_Swi_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_knl_Swi_Params), /* prmsSize */
@@ -14195,7 +14206,7 @@ __FAR__ const xdc_runtime_Core_ObjDesc ti_sysbios_knl_Task_Object__DESC__C = {
     &ti_sysbios_knl_Task_Module__root__V.link, /* modLink */
     sizeof(ti_sysbios_knl_Task___S1) - sizeof(ti_sysbios_knl_Task_Object2__), /* objAlign */
     0, /* objHeap */
-    0, /* objName */
+    offsetof(ti_sysbios_knl_Task_Object__, __name), /* objName */
     sizeof(ti_sysbios_knl_Task_Object2__), /* objSize */
     (xdc_Ptr)&ti_sysbios_knl_Task_Object__PARAMS__C, /* prmsInit */
     sizeof(ti_sysbios_knl_Task_Params), /* prmsSize */
@@ -14354,7 +14365,7 @@ xdc_runtime_Types_Label *ti_sysbios_family_arm_m3_Hwi_Handle__label__S(xdc_Ptr o
 {
     lab->handle = obj;
     lab->modId = 32802;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_family_arm_m3_Hwi_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -14589,7 +14600,7 @@ xdc_runtime_Types_Label *ti_sysbios_family_arm_msp432_Timer_Handle__label__S(xdc
 {
     lab->handle = obj;
     lab->modId = 32810;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_family_arm_msp432_Timer_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -14800,7 +14811,7 @@ xdc_runtime_Types_Label *ti_sysbios_gates_GateHwi_Handle__label__S(xdc_Ptr obj, 
 {
     lab->handle = obj;
     lab->modId = 32806;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_gates_GateHwi_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -14981,7 +14992,7 @@ xdc_runtime_Types_Label *ti_sysbios_gates_GateMutex_Handle__label__S(xdc_Ptr obj
 {
     lab->handle = obj;
     lab->modId = 32807;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_gates_GateMutex_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -15162,7 +15173,7 @@ xdc_runtime_Types_Label *ti_sysbios_hal_Hwi_Handle__label__S(xdc_Ptr obj, xdc_ru
 {
     lab->handle = obj;
     lab->modId = 32794;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_hal_Hwi_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -15414,7 +15425,7 @@ xdc_runtime_Types_Label *ti_sysbios_heaps_HeapMem_Handle__label__S(xdc_Ptr obj, 
 {
     lab->handle = obj;
     lab->modId = 32809;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_heaps_HeapMem_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -15648,7 +15659,7 @@ xdc_runtime_Types_Label *ti_sysbios_knl_Clock_Handle__label__S(xdc_Ptr obj, xdc_
 {
     lab->handle = obj;
     lab->modId = 32786;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_knl_Clock_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -16103,7 +16114,7 @@ xdc_runtime_Types_Label *ti_sysbios_knl_Semaphore_Handle__label__S(xdc_Ptr obj, 
 {
     lab->handle = obj;
     lab->modId = 32790;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_knl_Semaphore_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -16285,7 +16296,7 @@ xdc_runtime_Types_Label *ti_sysbios_knl_Swi_Handle__label__S(xdc_Ptr obj, xdc_ru
 {
     lab->handle = obj;
     lab->modId = 32791;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_knl_Swi_Object__*)obj)->__name, 1);
 
     return lab;
 }
@@ -16484,7 +16495,7 @@ xdc_runtime_Types_Label *ti_sysbios_knl_Task_Handle__label__S(xdc_Ptr obj, xdc_r
 {
     lab->handle = obj;
     lab->modId = 32792;
-    xdc_runtime_Core_assignLabel(lab, 0, 0);
+    xdc_runtime_Core_assignLabel(lab, ((ti_sysbios_knl_Task_Object__*)obj)->__name, 1);
 
     return lab;
 }
