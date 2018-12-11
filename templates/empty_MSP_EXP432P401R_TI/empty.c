@@ -54,10 +54,10 @@
 /* Board Header file */
 #include "Board.h"
 
-#define TASKSTACKSIZE   512
+#define SENSOR_TSK_SIZE   512
 
 Task_Struct task0Struct;
-Char task0Stack[TASKSTACKSIZE];
+Char task0Stack[SENSOR_TSK_SIZE];
 
 /*
  *  ======== heartBeatFxn ========
@@ -92,7 +92,7 @@ int main(void)
     /* Construct heartBeat Task  thread */
     Task_Params_init(&taskParams);
     taskParams.arg0 = 1000;
-    taskParams.stackSize = TASKSTACKSIZE;
+    taskParams.stackSize = SENSOR_TSK_SIZE;
     taskParams.stack = &task0Stack;
     Task_construct(&task0Struct, (Task_FuncPtr)heartBeatFxn, &taskParams, NULL);
 

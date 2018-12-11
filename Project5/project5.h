@@ -64,7 +64,7 @@
 #include "HAL_TMP006.h"
 
 // analysis shows no task needs more than 1000 bytes
-#define TASKSTACKSIZE   1000
+#define SENSOR_TSK_SIZE   1000
 
 // values for calculating and evaluating ADC and g forces from accelerometer
 #define ACCEL_SENSITIVITY   (0.660) // in Volts / g
@@ -163,7 +163,7 @@ Semaphore_Handle SEMHDL_disp_flags;
  */
 Task_Struct TSK_STRCT_process_accel, TSK_STRCT_update_lcd, TSK_STRCT_process_temp;
 Task_Handle TSK_HDL_adc, TSK_HDL_lcd, TSK_HDL_temp, TSK_HDL_process_temp;
-Char TSK_STK_accel[TASKSTACKSIZE], TSK_STK_lcd[TASKSTACKSIZE], TSK_STK_process_temp[TASKSTACKSIZE];
+Char TSK_STK_accel[SENSOR_TSK_SIZE], TSK_STK_lcd[SENSOR_TSK_SIZE], TSK_STK_process_temp[SENSOR_TSK_SIZE];
 
 
 

@@ -1,29 +1,29 @@
 
-XOPTS = -I"C:/ti/xdctools_3_32_00_06_core/packages/" -Dxdc_target_types__=C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/targets/arm/elf/std.h -Dxdc_target_name__=M4F
+XOPTS = -I"/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/" -Dxdc_target_types__=/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/targets/arm/elf/std.h -Dxdc_target_name__=M4F
 
-vpath % C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/
-vpath %.c C:/ti/xdctools_3_32_00_06_core/packages/
+vpath % /Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/
+vpath %.c /Users/druepeters/ti/xdctools_3_32_00_06_core/packages/
 
 CCOPTS    = --endian=little -mv7M4 --abi=eabi --float_support=fpv4spd16 -q -ms --opt_for_speed=2  --program_level_compile -o3 -g --optimize_with_debug  -Dti_sysbios_knl_Task_minimizeLatency__D=FALSE -Dti_sysbios_knl_Clock_stopCheckNext__D=FALSE -Dti_sysbios_family_arm_m3_Hwi_enableException__D=TRUE -Dti_sysbios_family_arm_m3_Hwi_disablePriority__D=32U -Dti_sysbios_family_arm_m3_Hwi_numSparseInterrupts__D=0U
 
-XDC_ROOT  = C:/ti/xdctools_3_32_00_06_core/packages/
+XDC_ROOT  = /Users/druepeters/ti/xdctools_3_32_00_06_core/packages/
 
-BIOS_ROOT = C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/
+BIOS_ROOT = /Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/sysbios/
 
 BIOS_DEFS =  -Dti_sysbios_BIOS_swiEnabled__D=TRUE -Dti_sysbios_BIOS_taskEnabled__D=TRUE -Dti_sysbios_BIOS_clockEnabled__D=TRUE -Dti_sysbios_BIOS_runtimeCreatesEnabled__D=TRUE -Dti_sysbios_knl_Task_moduleStateCheckFlag__D=FALSE -Dti_sysbios_knl_Task_objectCheckFlag__D=FALSE -Dti_sysbios_hal_Hwi_DISABLE_ALL_HOOKS -Dti_sysbios_knl_Swi_DISABLE_ALL_HOOKS -Dti_sysbios_BIOS_smpEnabled__D=FALSE -Dti_sysbios_Build_useHwiMacros -Dti_sysbios_knl_Swi_numPriorities__D=16 -Dti_sysbios_knl_Task_deleteTerminatedTasks__D=FALSE -Dti_sysbios_knl_Task_numPriorities__D=16 -Dti_sysbios_knl_Task_checkStackFlag__D=TRUE -Dti_sysbios_knl_Task_initStackFlag__D=TRUE -Dti_sysbios_knl_Task_DISABLE_ALL_HOOKS -Dti_sysbios_knl_Clock_TICK_SOURCE=ti_sysbios_knl_Clock_TickSource_TIMER -Dti_sysbios_knl_Clock_TICK_MODE=ti_sysbios_knl_Clock_TickMode_PERIODIC -Dti_sysbios_hal_Core_delegate_getId=ti_sysbios_hal_CoreNull_getId__E -Dti_sysbios_hal_Core_delegate_interruptCore=ti_sysbios_hal_CoreNull_interruptCore__E -Dti_sysbios_hal_Core_delegate_lock=ti_sysbios_hal_CoreNull_lock__E -Dti_sysbios_hal_Core_delegate_unlock=ti_sysbios_hal_CoreNull_unlock__E -Dti_sysbios_hal_Core_numCores__D=1 -Dti_sysbios_hal_CoreNull_numCores__D=1 -Dti_sysbios_utils_Load_taskEnabled__D=TRUE -Dti_sysbios_utils_Load_swiEnabled__D=FALSE -Dti_sysbios_utils_Load_hwiEnabled__D=FALSE -Dti_sysbios_family_arm_m3_Hwi_dispatcherSwiSupport__D=TRUE -Dti_sysbios_family_arm_m3_Hwi_dispatcherTaskSupport__D=TRUE -Dti_sysbios_family_arm_m3_Hwi_dispatcherAutoNestingSupport__D=FALSE -Dti_sysbios_family_arm_m3_Hwi_dispatcherIrpTrackingSupport__D=TRUE -Dti_sysbios_knl_Semaphore_supportsEvents__D=FALSE -Dti_sysbios_knl_Semaphore_supportsPriority__D=FALSE -Dxdc_runtime_Log_DISABLE_ALL
 
-BIOS_INC  = -I"C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/"
+BIOS_INC  = -I"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/"
 
-TARGET_INC = -I"C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/"
+TARGET_INC = -I"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/"
 
-INCS = $(BIOS_INC) $(TARGET_INC)  --include_path="C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib" --include_path="C:/ti/ccsv8/ccs_base/arm/include" --include_path="C:/ti/ccsv8/ccs_base/arm/include/CMSIS" --include_path="C:/Users/druep/Documents/EEL4930_AdvMCU/Project6" --include_path="C:/Users/druep/Documents/EEL4930_AdvMCU/Project6" --include_path="C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/inc/CMSIS" --include_path="C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/inc" --include_path="C:/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" 
+INCS = $(BIOS_INC) $(TARGET_INC)  --include_path="C:/ti/simplelink_msp432p4_sdk_2_30_00_14/source/ti/grlib" --include_path="/Applications/ti/ccsv8/ccs_base/arm/include" --include_path="/Applications/ti/ccsv8/ccs_base/arm/include/CMSIS" --include_path="/Users/druepeters/Documents/Development/EEL4930_AdvMCU/Project6" --include_path="/Users/druepeters/Documents/Development/EEL4930_AdvMCU/Project6" --include_path="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/inc/CMSIS" --include_path="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/inc" --include_path="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" 
 
-CC = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include
-ASM = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include
-AR = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armar rq
+CC = /Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl -c $(CCOPTS) -I /Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include
+ASM = /Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl -c $(CCOPTS) -I /Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include
+AR = /Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armar rq
 
-DEL = C:/ti/xdctools_3_32_00_06_core/packages/../bin/rm -f
-CP = C:/ti/xdctools_3_32_00_06_core/packages/../bin/cp -f
+DEL = rm -f
+CP = cp -f
 
 define RM
 	$(if $(wildcard $1),$(DEL) $1,:)
@@ -85,5 +85,5 @@ sysbios.aem4f: BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSuppor
 
 
 clean:
-	@$(DEL) ..\makefile.libs
+	@$(DEL) ../makefile.libs
 	@-$(call RM, *)

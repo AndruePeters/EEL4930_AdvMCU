@@ -110,19 +110,19 @@ int main(void)
 
 
     // init adc task
-    task_params.stackSize = TASKSTACKSIZE;
+    task_params.stackSize = SENSOR_TSK_SIZE;
     task_params.priority = 1;
     task_params.stack = &TSK_STK_accel;
     TSK_HDL_adc = Task_create(TSK_process_accelerometer, &task_params, NULL);
 
     // init LCD task
-    task_params.stackSize = TASKSTACKSIZE;
+    task_params.stackSize = SENSOR_TSK_SIZE;
     task_params.priority = 1;
     task_params.stack = &TSK_STK_lcd;
     TSK_HDL_lcd = Task_create(TSK_update_LCD, &task_params, NULL);
 
     // init temperature task
-    task_params.stackSize = TASKSTACKSIZE;
+    task_params.stackSize = SENSOR_TSK_SIZE;
     task_params.priority = 1;
     task_params.stack = &TSK_STK_process_temp;
     TSK_HDL_process_temp = Task_create(TSK_process_temp_sensor, &task_params, NULL);
@@ -668,7 +668,7 @@ void LCD_draw_labels()
 {
     UInt key = Hwi_disable();
     Graphics_clearDisplay(&g_sContext);
-    Graphics_drawStringCentered(&g_sContext, (int8_t *)"Temperature   [°F]",    19,     64, 20, OPAQUE_TEXT);
+    Graphics_drawStringCentered(&g_sContext, (int8_t *)"Temperature   [ï¿½F]",    19,     64, 20, OPAQUE_TEXT);
     Graphics_drawStringCentered(&g_sContext, (int8_t *)"Accelerometer [g]",     18,     64, 60, OPAQUE_TEXT);
     Graphics_drawString(&g_sContext, (int8_t *)"Current",                       7,      CURR_X_OFFSET, 70, OPAQUE_TEXT);
     Graphics_drawString(&g_sContext, (int8_t *)"Max",                           3,      MAX_X_OFFSET, 70, OPAQUE_TEXT);

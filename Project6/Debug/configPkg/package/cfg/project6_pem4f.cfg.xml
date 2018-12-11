@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1252"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--  This file conforms to the DTD xdc/cfg/configuration.dtd -->
 <configuration name="configPkg/project6.xem4f"
     platformName="ti.platforms.msp432:MSP432P401R"
@@ -7,7 +7,7 @@
     stack="2000"
     heap="0"
     argSize="0"
-    execCmd="@%24%28ECHO%29%20ti.platforms.msp432%20platform%20package%20cannot%20execute%20project6.xem4f%20on%20Windows%0A"
+    execCmd="@%24%28ECHO%29%20ti.platforms.msp432%20platform%20package%20cannot%20execute%20project6.xem4f%20on%20MacOS%0A"
     endian="little"
     codeModel="thumb2"
     dataModel="null">
@@ -61,11 +61,11 @@
             version="1,0,5.2,5"
             usedby="ti.sysbios.utils"/>
     <target name="ti.targets.arm.elf.M4F"
-            version="1,0,18.1,4"
+            version="1,0,18.1,3"
             usedby="configPkg"/>
 </targets>
 <imports>
-    <package name="xdc.services.global" version="1,0,0,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.global" version="1,0,0,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.services.global.Clock"
                 used="true"
                 uses="">
@@ -77,25 +77,25 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc" version="1,1,1,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc" version="1,1,1,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.Warnings"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="xdc.corevers" version="16,0,2,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.corevers" version="16,0,2,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
     </package>
-    <package name="xdc.shelf" version="1,0,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.shelf" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
     </package>
-    <package name="xdc.services.spec" version="1,0,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.spec" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
     </package>
-    <package name="xdc.services.intern.xsr" version="1,0,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.intern.xsr" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
     </package>
-    <package name="xdc.services.intern.gen" version="1,0,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.intern.gen" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
     </package>
-    <package name="xdc.services.intern.cmd" version="1,0,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.intern.cmd" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
     </package>
-    <package name="xdc.bld" version="1,0,2,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.bld" version="1,0,2,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.bld.BuildEnvironment"
                 used="false"
                 uses="">
@@ -149,7 +149,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.targets" version="1,0,3,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.targets" version="1,0,3,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.targets.C64P"
                 used="false"
                 uses="">
@@ -219,7 +219,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.targets.arm.elf" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.targets.arm.elf" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.targets.arm.elf.Arm9"
                 used="false"
                 uses="">
@@ -265,7 +265,7 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.rov" version="1,0,1,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.rov" version="1,0,1,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.rov.Model"
                 used="false"
                 uses="">
@@ -295,11 +295,11 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.runtime" version="2,1,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.runtime" version="2,1,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.runtime.Assert"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Assert/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Assert/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Assert/viewNameMap$'  length='0'></map>
             </feature>
@@ -399,7 +399,7 @@
         <module name="xdc.runtime.Core"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Core/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Core/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Core/viewNameMap$'  length='0'></map>
             </feature>
@@ -499,7 +499,7 @@
         <module name="xdc.runtime.Defaults"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Defaults/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Defaults/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Defaults/viewNameMap$'  length='0'></map>
             </feature>
@@ -599,7 +599,7 @@
         <module name="xdc.runtime.Diags"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Diags/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Diags/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Diags/viewNameMap$'  length='0'></map>
             </feature>
@@ -732,7 +732,7 @@
         <module name="xdc.runtime.Error"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Error/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Error/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Error/viewNameMap$'  length='0'></map>
             </feature>
@@ -841,7 +841,7 @@
         <module name="xdc.runtime.Gate"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Gate/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Gate/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Gate/viewNameMap$'  length='0'></map>
             </feature>
@@ -943,7 +943,7 @@
         <module name="xdc.runtime.Log"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Log/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Log/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Log/viewNameMap$'  length='0'></map>
             </feature>
@@ -1079,7 +1079,7 @@
         <module name="xdc.runtime.Main"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Main/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Main/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Main/viewNameMap$'  length='0'></map>
             </feature>
@@ -1192,7 +1192,7 @@
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -1290,13 +1290,13 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x1</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@977ada::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateHwi</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x1</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@1437268e::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateHwi</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="xdc.runtime.Memory"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Memory/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Memory/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Memory/viewNameMap$'  length='0'></map>
             </feature>
@@ -1412,7 +1412,7 @@
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -1510,7 +1510,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x2</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@10217f0::(xdc.runtime.IHeap.Module)ti.sysbios.heaps.HeapMem</field><field name='abstractInstances$'>true</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x2</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@52bd0459::(xdc.runtime.IHeap.Module)ti.sysbios.heaps.HeapMem</field><field name='abstractInstances$'>true</field></module>
             </feature>
         </module>
         <module name="xdc.runtime.HeapMin"
@@ -1524,7 +1524,7 @@
         <module name="xdc.runtime.Registry"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Registry/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Registry/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Registry/viewNameMap$'  length='0'></map>
             </feature>
@@ -1636,7 +1636,7 @@
         <module name="xdc.runtime.Startup"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Startup/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Startup/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Startup/viewNameMap$'  length='0'></map>
             </feature>
@@ -1771,7 +1771,7 @@
         <module name="xdc.runtime.System"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.System/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.System/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.System/viewNameMap$'  length='0'></map>
             </feature>
@@ -1905,7 +1905,7 @@
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -2003,7 +2003,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x3</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@1dee8db::(xdc.runtime.ISystemSupport.Module)xdc.runtime.SysMin</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x3</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@554c0017::(xdc.runtime.ISystemSupport.Module)xdc.runtime.SysMin</field></module>
             </feature>
             <feature name="maxAtexitHandlers" type="number" value="2"/>
             <feature name="abortFxn" type="object" value="%26xdc_runtime_System_abortStd__E"/>
@@ -2029,7 +2029,7 @@
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -2127,7 +2127,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x4</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@16e9e55::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateHwi</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x4</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@2215ac39::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateHwi</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="xdc.runtime.SysCallback"
@@ -2137,7 +2137,7 @@
         <module name="xdc.runtime.SysMin"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.SysMin/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.SysMin/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.SysMin/viewNameMap$'  length='0'></map>
             </feature>
@@ -2261,7 +2261,7 @@
         <module name="xdc.runtime.Text"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Text/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='xdc.runtime.Text/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='xdc.runtime.Text/viewNameMap$'  length='0'></map>
             </feature>
@@ -2519,15 +2519,15 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.targets.arm.rtsarm" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.targets.arm.rtsarm" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.targets.arm.rtsarm.Settings"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.interfaces" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.interfaces" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
     </package>
-    <package name="ti.sysbios.family" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.family" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.family.Settings"
                 used="true"
                 uses="">
@@ -2543,7 +2543,7 @@
             <feature name="familyName" type="string" value="arm"/>
         </module>
     </package>
-    <package name="ti.sysbios.family.arm" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.family.arm" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.family.arm.HwiCommon"
                 used="false"
                 uses="">
@@ -2565,20 +2565,20 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.services.getset" version="1,0,0,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.getset" version="1,0,0,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.services.getset.GetSet"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.rts" version="2,0,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.rts" version="2,0,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.rts.MemAlloc"
                 used="true"
                 uses="">
             <feature name="generateFunctions" type="boolean" value="true"/>
         </module>
     </package>
-    <package name="xdc.runtime.knl" version="1,0,0,1449624895255" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.runtime.knl" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.runtime.knl.GateH"
                 used="false"
                 uses="">
@@ -2640,7 +2640,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.catalog.arm.cortexm4" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.catalog.arm.cortexm4" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.catalog.arm.cortexm4.Tiva"
                 used="false"
                 uses="">
@@ -2674,15 +2674,15 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.catalog" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.catalog" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
     </package>
-    <package name="ti.catalog.peripherals.hdvicp2" version="" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.catalog.peripherals.hdvicp2" version="" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.catalog.peripherals.hdvicp2.HDVICP2"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="xdc.platform" version="1,0,1,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.platform" version="1,0,1,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.platform.ExeContext"
                 used="true"
                 uses="">
@@ -2692,7 +2692,7 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.cfg" version="1,0,2,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.cfg" version="1,0,2,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.cfg.Program"
                 used="true"
                 uses="">
@@ -2703,10 +2703,10 @@
             <feature name="stack" type="number" value="2000"/>
             <feature name="heap" type="number" value="0"/>
             <feature name="argSize" type="number" value="0"/>
-            <feature name="execCmd" type="string" value="@%24%28ECHO%29%20ti.platforms.msp432%20platform%20package%20cannot%20execute%20project6.xem4f%20on%20Windows%0A"/>
+            <feature name="execCmd" type="string" value="@%24%28ECHO%29%20ti.platforms.msp432%20platform%20package%20cannot%20execute%20project6.xem4f%20on%20MacOS%0A"/>
             <feature name="linkTemplate" type="object" value="null"/>
             <feature name="main" type="undefined" value="undefined"/>
-            <feature name="sectMap" type="object"><map id='xdc.cfg.Program/sectMap'  length='3'><entry key='.bootVecs'>xdc.services.intern.xsr.Value$Obj@d20f5c::xdc.cfg.Program.SectionSpec#0</entry><entry key='.vecs'>xdc.services.intern.xsr.Value$Obj@eea109::xdc.cfg.Program.SectionSpec#1</entry><entry key='.resetVecs'>xdc.services.intern.xsr.Value$Obj@8e7833::xdc.cfg.Program.SectionSpec#2</entry></map>
+            <feature name="sectMap" type="object"><map id='xdc.cfg.Program/sectMap'  length='3'><entry key='.bootVecs'>xdc.services.intern.xsr.Value$Obj@3cb2ce82::xdc.cfg.Program.SectionSpec#0</entry><entry key='.vecs'>xdc.services.intern.xsr.Value$Obj@7f13d7ef::xdc.cfg.Program.SectionSpec#1</entry><entry key='.resetVecs'>xdc.services.intern.xsr.Value$Obj@6fc5cd16::xdc.cfg.Program.SectionSpec#2</entry></map>
             </feature>
             <feature name="sectionsExclude" type="object" value="null"/>
             <feature name="memoryExclude" type="boolean" value="false"/>
@@ -2724,7 +2724,7 @@
   <field name="boardName">msp432</field>
   <field name="boardFamily">null</field>
   <field name="boardRevision">null</field>
-</struct></field><field name='attrs'>xdc.services.intern.xsr.Value$Obj@6dee0f::(xdc.platform.ICpuDataSheet.Instance)ti.catalog.arm.cortexm4.MSP432.Instance#0</field><field name='memoryMap'></field></instance>
+</struct></field><field name='attrs'>xdc.services.intern.xsr.Value$Obj@497f6a92::(xdc.platform.ICpuDataSheet.Instance)ti.catalog.arm.cortexm4.MSP432.Instance#0</field><field name='memoryMap'></field></instance>
             </feature>
             <feature name="platformName" type="string" value="ti.platforms.msp432%3AMSP432P401R"/>
             <feature name="platform" type="xdc.platform.IPlatform.Instance"><instance id='ti.platforms.msp432.Platform.Instance#0' ><field name='externalMemoryMap'></field><field name='customMemoryMap'></field><field name='renameMap'></field><field name='dataMemory'>null</field><field name='codeMemory'>null</field><field name='stackMemory'>null</field><field name='sectMap'></field><field name='peripherals'></field></instance>
@@ -2741,13 +2741,13 @@
         <module name="xdc.cfg.SourceDir"
                 used="true"
                 uses="">
-            <feature name="outputDir" type="string" value="C%3A%5CUsers%5Cdruep%5CDocuments%5CEEL4930_AdvMCU%5CProject6/src"/>
+            <feature name="outputDir" type="string" value="/Users/druepeters/Documents/Development/EEL4930_AdvMCU/Project6/src"/>
             <feature name="toBuildDir" type="string" value=".."/>
             <feature name="makefileName" type="string" value="makefile.libs"/>
             <feature name="verbose" type="number" value="2"/>
         </module>
     </package>
-    <package name="ti.platforms.msp432" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.platforms.msp432" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.platforms.msp432.Platform"
                 used="true"
                 uses="">
@@ -2756,11 +2756,11 @@
             <feature name="nameFormat" type="string" value="%24%28deviceName%29%3A%24%28includeLinkCmdFile%29%3A%24%28clockRate%29"/>
         </module>
     </package>
-    <package name="ti.sysbios" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.BIOS"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.BIOS/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.BIOS/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.BIOS/viewNameMap$'  length='0'></map>
             </feature>
@@ -2916,7 +2916,7 @@
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -3014,7 +3014,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x9</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@12b644f::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateMutex</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x9</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@4ff28fab::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateMutex</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.Build"
@@ -3028,11 +3028,11 @@
             </feature>
         </module>
     </package>
-    <package name="ti.sysbios.family.arm.msp432.init" version="1,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.family.arm.msp432.init" version="1,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.family.arm.msp432.init.Boot"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.msp432.init.Boot/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.msp432.init.Boot/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.family.arm.msp432.init.Boot/viewNameMap$'  length='0'></map>
             </feature>
@@ -3142,15 +3142,15 @@
             <feature name="computedCpuFrequency" type="undefined" value="undefined"/>
         </module>
     </package>
-    <package name="ti.drivers.ports" version="1,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
+    <package name="ti.drivers.ports" version="1,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
     </package>
-    <package name="ti.mw.fatfs" version="" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
+    <package name="ti.mw.fatfs" version="" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
         <module name="ti.mw.fatfs.FatFS"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.hal" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.hal" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.hal.Cache"
                 used="false"
                 uses="">
@@ -3170,7 +3170,7 @@
         <module name="ti.sysbios.hal.Hwi"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.hal.Hwi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.hal.Hwi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.hal.Hwi/viewNameMap$'  length='0'></map>
             </feature>
@@ -3291,7 +3291,7 @@
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -3389,7 +3389,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x8</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='dispatcherAutoNestingSupport'>true</field><field name='dispatcherSwiSupport'>undefined</field><field name='dispatcherTaskSupport'>undefined</field><field name='dispatcherIrpTrackingSupport'>true</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@13a5d68::(ti.sysbios.interfaces.IHwi.Module)ti.sysbios.family.arm.m3.Hwi</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x8</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='dispatcherAutoNestingSupport'>true</field><field name='dispatcherSwiSupport'>undefined</field><field name='dispatcherTaskSupport'>undefined</field><field name='dispatcherIrpTrackingSupport'>true</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@20d77214::(ti.sysbios.interfaces.IHwi.Module)ti.sysbios.family.arm.m3.Hwi</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.hal.Power"
@@ -3421,11 +3421,11 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.family.arm.msp432" version="1,0,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.family.arm.msp432" version="1,0,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.family.arm.msp432.Timer"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.msp432.Timer/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.msp432.Timer/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.family.arm.msp432.Timer/viewNameMap$'  length='0'></map>
             </feature>
@@ -3565,7 +3565,7 @@
         <module name="ti.sysbios.family.arm.msp432.ClockFreqs"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.msp432.ClockFreqs/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.msp432.ClockFreqs/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.family.arm.msp432.ClockFreqs/viewNameMap$'  length='0'></map>
             </feature>
@@ -3678,7 +3678,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.family.arm.m3" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.family.arm.m3" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.family.arm.m3.Clobber"
                 used="false"
                 uses="">
@@ -3690,7 +3690,7 @@
         <module name="ti.sysbios.family.arm.m3.Hwi"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.m3.Hwi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.m3.Hwi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.family.arm.m3.Hwi/viewNameMap$'  length='0'></map>
             </feature>
@@ -4081,7 +4081,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
   <field name="useDispatcher">true</field>
   <field name="priority">0xff</field>
   <field name="fxn">&amp;ti_sysbios_family_arm_msp432_Timer_periodicStub__E</field>
-  <field name="hwi">xdc.services.intern.xsr.Value$Obj@149bfc7::ti.sysbios.family.arm.m3.Hwi.Instance#0</field>
+  <field name="hwi">xdc.services.intern.xsr.Value$Obj@4c5d43eb::ti.sysbios.family.arm.m3.Hwi.Instance#0</field>
 </struct></elem><elem><struct id="ti.sysbios.family.arm.m3.Hwi/interrupt/27">
   <field name="name"/>
   <field name="used">false</field>
@@ -4459,7 +4459,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.family.arm.m3.IntrinsicsSupport"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.m3.IntrinsicsSupport/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.m3.IntrinsicsSupport/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.family.arm.m3.IntrinsicsSupport/viewNameMap$'  length='0'></map>
             </feature>
@@ -4557,7 +4557,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.family.arm.m3.TaskSupport"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.m3.TaskSupport/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.family.arm.m3.TaskSupport/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.family.arm.m3.TaskSupport/viewNameMap$'  length='0'></map>
             </feature>
@@ -4667,11 +4667,11 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.knl" version="2,0,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.knl" version="2,0,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.knl.Clock"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Clock/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Clock/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Clock/viewNameMap$'  length='0'></map>
             </feature>
@@ -4800,7 +4800,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -4898,7 +4898,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x5</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='ANY'>(-0x0 - 1)</field><field name='supportsDynamic'>false</field><field name='defaultDynamic'>false</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@64fb1c::(ti.sysbios.interfaces.ITimer.Module)ti.sysbios.family.arm.msp432.Timer</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x5</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='ANY'>(-0x0 - 1)</field><field name='supportsDynamic'>false</field><field name='defaultDynamic'>false</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@6372c927::(ti.sysbios.interfaces.ITimer.Module)ti.sysbios.family.arm.msp432.Timer</field><field name='abstractInstances$'>false</field></module>
             </feature>
             <feature name="LW_delayed" type="xdc.runtime.Log.EventDesc"><struct id='xdc.runtime.Log.EventDesc#13' ><field name='mask'>0x400</field><field name='level'>undefined</field><field name='msg'>LW_delayed: delay: %d</field></struct>
             </feature>
@@ -4924,7 +4924,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.knl.Idle"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Idle/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Idle/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Idle/viewNameMap$'  length='0'></map>
             </feature>
@@ -5038,7 +5038,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.knl.Intrinsics"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Intrinsics/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Intrinsics/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Intrinsics/viewNameMap$'  length='0'></map>
             </feature>
@@ -5150,7 +5150,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -5248,7 +5248,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x6</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@f49424::(ti.sysbios.interfaces.IIntrinsicsSupport.Module)ti.sysbios.family.arm.m3.IntrinsicsSupport</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x6</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@731792ae::(ti.sysbios.interfaces.IIntrinsicsSupport.Module)ti.sysbios.family.arm.m3.IntrinsicsSupport</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.knl.Event"
@@ -5262,7 +5262,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.knl.Queue"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Queue/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>false</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Queue/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>false</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Queue/viewNameMap$'  length='0'></map>
             </feature>
@@ -5370,7 +5370,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.knl.Semaphore"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Semaphore/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Semaphore/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Semaphore/viewNameMap$'  length='0'></map>
             </feature>
@@ -5496,7 +5496,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.knl.Swi"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Swi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Swi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Swi/viewNameMap$'  length='0'></map>
             </feature>
@@ -5634,7 +5634,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.knl.Task"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Task/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.knl.Task/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.knl.Task/viewNameMap$'  length='0'></map>
             </feature>
@@ -5855,7 +5855,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -5953,13 +5953,13 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x7</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='defaultStackSize'>undefined</field><field name='stackAlignment'>undefined</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@3ed883::(ti.sysbios.interfaces.ITaskSupport.Module)ti.sysbios.family.arm.m3.TaskSupport</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x7</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='defaultStackSize'>undefined</field><field name='stackAlignment'>undefined</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@6677a632::(ti.sysbios.interfaces.ITaskSupport.Module)ti.sysbios.family.arm.m3.TaskSupport</field></module>
             </feature>
             <feature name="numConstructedTasks" type="number" value="0"/>
             <feature name="startupHookFunc" type="object" value="null"/>
         </module>
     </package>
-    <package name="ti.drivers" version="1,0,0,0" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
+    <package name="ti.drivers" version="1,0,0,0" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
         <module name="ti.drivers.Config"
                 used="true"
                 uses="">
@@ -6067,9 +6067,9 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             <feature name="Object__table" type="object" value="null"/>
         </module>
     </package>
-    <package name="ti.mw.wifi.cc3x00" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
+    <package name="ti.mw.wifi.cc3x00" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
     </package>
-    <package name="ti.mw" version="" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
+    <package name="ti.mw" version="" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/">
         <module name="ti.mw.Config"
                 used="true"
                 uses="">
@@ -6083,11 +6083,11 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             <feature name="supportsWiFiCC3X00Lib" type="boolean" value="true"/>
         </module>
     </package>
-    <package name="ti.sysbios.gates" version="2,0,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.gates" version="2,0,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.gates.GateHwi"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.gates.GateHwi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.gates.GateHwi/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.gates.GateHwi/viewNameMap$'  length='0'></map>
             </feature>
@@ -6217,7 +6217,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.gates.GateMutex"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.gates.GateMutex/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.gates.GateMutex/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.gates.GateMutex/viewNameMap$'  length='0'></map>
             </feature>
@@ -6331,7 +6331,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.xdcruntime" version="1,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.xdcruntime" version="1,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.xdcruntime.GateThreadSupport"
                 used="false"
                 uses="">
@@ -6361,7 +6361,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.heaps" version="2,0,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.heaps" version="2,0,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.heaps.HeapBuf"
                 used="false"
                 uses="">
@@ -6369,7 +6369,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
         <module name="ti.sysbios.heaps.HeapMem"
                 used="true"
                 uses="">
-            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.heaps.HeapMem/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@121f838::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateMutex.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.sysbios.heaps.HeapMem/common$' ><field name='diags_ASSERT'>ALWAYS_ON</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_ON</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>true</field><field name='gate'>xdc.services.intern.xsr.Value$Obj@4316d666::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateMutex.Instance#0</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>DELETE_POLICY</field><field name='namedInstance'>true</field><field name='namedModule'>true</field><field name='romPatchTable'>false</field></struct>
             </feature>
             <feature name="viewNameMap$" type="object"><map id='ti.sysbios.heaps.HeapMem/viewNameMap$'  length='0'></map>
             </feature>
@@ -6519,7 +6519,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
   <field name="diags_USER8">ALWAYS_OFF</field>
   <field name="diags_ANALYSIS">ALWAYS_OFF</field>
   <field name="fxntab">true</field>
-  <field name="gate">xdc.services.intern.xsr.Value$Obj@96cb5a::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
+  <field name="gate">xdc.services.intern.xsr.Value$Obj@3c88831::(xdc.runtime.IGateProvider.Instance)ti.sysbios.gates.GateHwi.Instance#0</field>
   <field name="gateParams">null</field>
   <field name="instanceHeap">null</field>
   <field name="instanceSection">null</field>
@@ -6617,7 +6617,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0xa</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@17c1b67::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateMutex</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0xa</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@265fb8ee::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateMutex</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.heaps.HeapMultiBuf"
@@ -6637,15 +6637,15 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.utils" version="2,0,0,0,1449624895255" repository="C:/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
+    <package name="ti.sysbios.utils" version="2,0,0,0,1449624895255" repository="/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/">
         <module name="ti.sysbios.utils.Load"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="configPkg" version="" repository="C:/Users/druep/Documents/EEL4930_AdvMCU/Project6/Debug/">
+    <package name="configPkg" version="" repository="/Users/druepeters/Documents/Development/EEL4930_AdvMCU/Project6/Debug/">
     </package>
-    <package name="xdc.services.io" version="1,0,0,0" repository="C:/ti/xdctools_3_32_00_06_core/packages/">
+    <package name="xdc.services.io" version="1,0,0,0" repository="/Users/druepeters/ti/xdctools_3_32_00_06_core/packages/">
         <module name="xdc.services.io.File"
                 used="false"
                 uses="">

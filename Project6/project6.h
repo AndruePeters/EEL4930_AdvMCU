@@ -30,7 +30,7 @@
 // #include <ti/drivers/I2C.h>
 
 /* Graphics library stuff */
-#include <grlib.h>
+#include <ti/grlib/grlib.h>
 #include <stdio.h> // sprintf
 #include "LcdDriver/Crystalfontz128x128_ST7735.h"
 #include "LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h"

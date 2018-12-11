@@ -1,6 +1,6 @@
 #
 # This file was generated based on the configuration script:
-#     C:\Users\druep\Documents\EEL4930_AdvMCU\empty_MSP432_TIRTOS_wGRLIB\empty.cfg
+#     /Users/druepeters/Documents/Development/EEL4930_AdvMCU/templates/empty_MSP432_TIRTOS_wGRLIB/empty.cfg
 #
 # This makefile may be included in other makefiles that need to build
 # the libraries containing the compiled source files generated as
@@ -14,7 +14,7 @@
 #
 # The absolute path to the generated source directory (at the time the
 # sources were generated) is:
-#    C:\Users\druep\Documents\EEL4930_AdvMCU\empty_MSP432_TIRTOS_wGRLIB\src
+#    /Users/druepeters/Documents/Development/EEL4930_AdvMCU/templates/empty_MSP432_TIRTOS_wGRLIB/src
 #
 GEN_SRC_DIR ?= ../src
 

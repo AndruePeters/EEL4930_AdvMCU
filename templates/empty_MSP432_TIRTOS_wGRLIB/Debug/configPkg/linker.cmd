@@ -9,17 +9,17 @@
  */
 
 
--l"C:\Users\druep\Documents\EEL4930_AdvMCU\empty_MSP432_TIRTOS_wGRLIB\Debug\configPkg\package\cfg\empty_pem4f.oem4f"
--l"C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/mw/wifi/cc3x00/lib/cc3x00_host_driver.aem4f"
--l"C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/lib/drivers_MSP432P401R.aem4f"
--l"C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/lib/drivers_wifi_MSP432P401R.aem4f"
--l"C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/lib/power_tirtos_MSP432P401R.aem4f"
--l"C:\ti\tirtos_msp43x_2_20_00_06\products\tidrivers_msp43x_2_20_00_08\packages\ti\mw\fatfs\lib\release\ti.mw.fatfs.aem4f"
--l"C:/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ports/lib/tirtosport.aem4f"
--l"C:\Users\druep\Documents\EEL4930_AdvMCU\empty_MSP432_TIRTOS_wGRLIB\src\sysbios\sysbios.aem4f"
--l"C:\ti\tirtos_msp43x_2_20_00_06\products\bios_6_46_00_23\packages\ti\targets\arm\rtsarm\lib\ti.targets.arm.rtsarm.aem4f"
--l"C:\ti\tirtos_msp43x_2_20_00_06\products\bios_6_46_00_23\packages\ti\targets\arm\rtsarm\lib\boot.aem4f"
--l"C:\ti\tirtos_msp43x_2_20_00_06\products\bios_6_46_00_23\packages\ti\targets\arm\rtsarm\lib\auto_init.aem4f"
+-l"/Users/druepeters/Documents/Development/EEL4930_AdvMCU/templates/empty_MSP432_TIRTOS_wGRLIB/Debug/configPkg/package/cfg/empty_pem4f.oem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/mw/wifi/cc3x00/lib/cc3x00_host_driver.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/lib/drivers_MSP432P401R.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/lib/drivers_wifi_MSP432P401R.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/lib/power_tirtos_MSP432P401R.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/mw/fatfs/lib/release/ti.mw.fatfs.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/tidrivers_msp43x_2_20_00_08/packages/ti/drivers/ports/lib/tirtosport.aem4f"
+-l"/Users/druepeters/Documents/Development/EEL4930_AdvMCU/templates/empty_MSP432_TIRTOS_wGRLIB/src/sysbios/sysbios.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/targets/arm/rtsarm/lib/ti.targets.arm.rtsarm.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/targets/arm/rtsarm/lib/boot.aem4f"
+-l"/Users/druepeters/ti/tirtos_msp43x_2_20_00_06/products/bios_6_46_00_23/packages/ti/targets/arm/rtsarm/lib/auto_init.aem4f"
 
 --retain="*(xdc.meta)"
 
