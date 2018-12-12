@@ -56,9 +56,9 @@
 
 // analysis shows no task needs more than 1000 bytes
 #define SENSOR_TSK_SIZE   1000
-#define GAME_TSK_SIZE 1000
-#define DISP_TSK_SIZE 1000
-#define NUM_MSGS 1
+#define GAME_TSK_SIZE 2000
+#define DISP_TSK_SIZE 2000
+#define NUM_MSGS 2
 
 
 
@@ -102,9 +102,26 @@ struct MsgDispObj {
     char comment[40];
 };
 
-Mailbox_Struct MBX_STR_sensors;
-Mailbox_Handle MBX_HDL_sensors;
-struct MsgSensorObj mbx_sensor_buff[NUM_MSGS];
+struct MailboxSenMsgObj {
+    Mailbox_MbxElem elem;
+    struct MsgSensorObj msg;
+};
+
+struct MailboxDispMsgObj {
+    Mailbox_MbxElem elem;
+    struct MsgDispObj msg;
+};
+
+
+
+
+
+
+
+Mailbox_Struct MBX_STR_sensors, MBX_STR_pet;
+Mailbox_Handle MBX_HDL_sensors, MBX_HDL_pet;
+struct MailboxSenMsgObj mbx_sensor_buff[NUM_MSGS];
+struct MailboxDispMsgObj mbx_disp_buff[NUM_MSGS];
 /* Task stuff */
 
 /*************************************************************/

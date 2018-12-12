@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="8.2.0"/>
+	<deviceVariant value="MSP432P401R"/>
+	<deviceFamily value="MSP432"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="18.1.4.LTS"/>
+	<isElfFormat value="true"/>
+	<connection value="common/targetdb/connections/TIXDS110_Connection.xml"/>
+	<rts value=""/>
+	<createSlaveProjects value=""/>
+	<ignoreDefaultDeviceSettings value="true"/>
+	<ignoreDefaultCCSSettings value="true"/>
+	<templateProperties value="id=mailbox_MSP_EXP432P401R_tirtos_ccs.projectspec.mailbox_MSP_EXP432P401R_tirtos_ccs,type=rtsc,xdcToolsVersion=3_50_08_24_core,target=ti.targets.arm.elf.M4F,platform=ti.platforms.msp432:MSP432P401R,buildProfile=release,isHybrid=true,configuroOptions= --compileOptions &quot;${COMPILER_FLAGS} -std=c99 &quot;"/>
+	<origin value="/Users/druepeters/ti/simplelink_msp432p4_sdk_2_30_00_14/examples/rtos/MSP_EXP432P401R/sysbios/mailbox/tirtos/ccs/mailbox_MSP_EXP432P401R_tirtos_ccs.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>

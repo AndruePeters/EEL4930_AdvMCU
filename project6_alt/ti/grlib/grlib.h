@@ -97,7 +97,7 @@ typedef struct Graphics_Rectangle
     int16_t yMin;            //!< The minimum Y coordinate of the rectangle.
     int16_t xMax;            //!< The maximum X coordinate of the rectangle.
     int16_t yMax;            //!< The maximum Y coordinate of the rectangle.
-} Graphics_Rectangle;
+};
 
 typedef struct Graphics_Display Graphics_Display;
 

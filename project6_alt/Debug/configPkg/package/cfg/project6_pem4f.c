@@ -1561,7 +1561,7 @@ typedef struct xdc_runtime_SysMin_Module_State__ {
 } xdc_runtime_SysMin_Module_State__;
 
 /* --> xdc_runtime_SysMin_Module_State_0_outbuf__A */
-__T1_xdc_runtime_SysMin_Module_State__outbuf xdc_runtime_SysMin_Module_State_0_outbuf__A[128];
+__T1_xdc_runtime_SysMin_Module_State__outbuf xdc_runtime_SysMin_Module_State_0_outbuf__A[512];
 
 /* Module__state__V */
 xdc_runtime_SysMin_Module_State__ xdc_runtime_SysMin_Module__state__V;
@@ -1685,7 +1685,7 @@ __FAR__ const xdc_SizeT ti_sysbios_knl_Task_Module_State_terminatedQ__O = offset
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/Debug/configPkg/package/cfg/project6_pem4f");
+xdc__META(__ASM__, "@(#)__ASM__ = /Users/druepeters/Documents/Development/EEL4930_AdvMCU/project6_alt/Debug/configPkg/package/cfg/project6_pem4f");
 
 /*
  *  ======== __ISA__ ========
@@ -6723,7 +6723,7 @@ __FAR__ const CT__xdc_runtime_Startup_sfxnRts xdc_runtime_Startup_sfxnRts__C = (
  */
 
 /* --> xdc_runtime_SysMin_Module_State_0_outbuf__A */
-__T1_xdc_runtime_SysMin_Module_State__outbuf xdc_runtime_SysMin_Module_State_0_outbuf__A[128];
+__T1_xdc_runtime_SysMin_Module_State__outbuf xdc_runtime_SysMin_Module_State_0_outbuf__A[512];
 
 /* Module__state__V */
 #if defined (__ICCARM__)
@@ -6814,7 +6814,7 @@ __FAR__ const CT__xdc_runtime_SysMin_Object__table xdc_runtime_SysMin_Object__ta
 
 /* bufSize__C */
 #pragma DATA_SECTION(xdc_runtime_SysMin_bufSize__C, ".const:xdc_runtime_SysMin_bufSize__C");
-__FAR__ const CT__xdc_runtime_SysMin_bufSize xdc_runtime_SysMin_bufSize__C = (xdc_SizeT)0x80;
+__FAR__ const CT__xdc_runtime_SysMin_bufSize xdc_runtime_SysMin_bufSize__C = (xdc_SizeT)0x200;
 
 /* flushAtExit__C */
 #pragma DATA_SECTION(xdc_runtime_SysMin_flushAtExit__C, ".const:xdc_runtime_SysMin_flushAtExit__C");
