@@ -76,6 +76,14 @@ struct pet {
     uint8_t y_coord;
 };
 
+struct pet_flags {
+    uint8_t feed_pet;
+    uint8_t water_pet;
+    uint8_t subtract_health;
+    uint8_t add_health;
+    uint8_t game_won;
+};
+
 
 /*
  * Mailbox stuff

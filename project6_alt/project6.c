@@ -94,25 +94,11 @@ Void LCD_init()
 /*************************************************************/
 Void TSK_read_sensors()
 {
-    static struct accelerometer curr_accel;
-    static struct accelerometer prev_accel;
-    static struct JS js;
-    static float temperature;
     static struct MsgSensorObj msg;
-
-    // initialize curr_accel and prev_accel
-    curr_accel = ACCEL_get();
-    prev_accel = curr_accel;
-
-    // initialize js
-    js = JS_get();
-
-    // initialize temperature
-    temperature = TEMP_get();
 
     while(1) {
         // update sensor values
-        msg.ac = curr_accel;
+        msg.ac = ACCEL_get();;
         msg.js = JS_get();
         msg.temp = TEMP_get();
 
@@ -146,6 +132,7 @@ Void TSK_play_game()
         }
     }
 }
+
 
 
 /*************************************************************/
