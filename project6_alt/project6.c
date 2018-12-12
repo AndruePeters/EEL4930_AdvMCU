@@ -26,6 +26,8 @@ int main(void)
     Board_initGPIO();
     Board_initADC();
 
+    LCD_init();
+
     Task_Params tp;
     Task_Params_init(&tp);
 
@@ -53,6 +55,36 @@ int main(void)
     tp.priority = 1;
     TSK_HDL_draw_screen = Task_create(TSK_draw_screen, &tp, NULL);
 
+
+    Clock_Params clk_params;
+    Clock_Params_init(&clk_params);
+
+    /*
+     * Periodic game clock
+     */
+    clk_params.period = Clock_tickPeriod;
+    clk_params.startFlag = TRUE;
+    CLK_HDL_game_timer = Clock_create(CLK_TSK_game_timer, Clock_tickPeriod * 5, &clk_params, NULL);
+
+    /*
+     * Periodic clock to update the display
+     */
+    clk_params.period = 100;
+    clk_params.startFlag = TRUE;
+    CLK_HDL_disp_timer = Clock_create(CLK_TSK_disp_timer, Clock_tickPeriod * 5, &clk_params, NULL);
+
+
+    /*
+     * Set up semaphores
+     */
+    Semaphore_Params sem_params;
+    Semaphore_Params_init(&sem_params);
+    sem_params.mode = ti_sysbios_knl_Semaphore_Mode_BINARY;
+
+    // update LCD semaphore
+    sem_params.instance->name = "update_LCD";
+    Semaphore_construct(&SEMSTRUCT_update_LCD, 0, &sem_params);
+    SEMHDL_update_LCD = Semaphore_handle(&SEMSTRUCT_update_LCD);
 
     Mailbox_Params mbx_params;
     Mailbox_Params_init(&mbx_params);
@@ -122,7 +154,17 @@ float TEMP_get()
 /*************************************************************/
 Void TSK_play_game()
 {
+    /* initialize game properties */
     static struct MsgSensorObj msg_sensors;
+    GPIO_setCallback(Booster_BUTTON2, BTN2_BP_Callback);
+    GPIO_setCallback(Booster_BUTTON1, BTN1_BP_Callback);
+
+    pet_bulb.health_max = 100;
+    pet_bulb.health = pet_bulb.health_max;
+    pet_bulb.pet_img = &good_bulb;
+    pet_bulb.pet_inverse_img = &bulb_inverse;
+
+    Graphics_drawImage(&g_sContext, pet_bulb.pet_img, 32, 127);
 
     while (1) {
 
@@ -130,15 +172,81 @@ Void TSK_play_game()
         if (Mailbox_pend(MBX_HDL_sensors, &msg_sensors, BIOS_NO_WAIT)) {
 
         }
+
+        if (pflags.feed_pet) {
+            pet_bulb.health += 20;
+            if(pet_bulb.health > pet_bulb.health_max)
+                pet_bulb.health = pet_bulb.health_max;
+        }
+
+        if (pflags.subtract_health) {
+            --pet_bulb.health;
+        }
+
+        if (pflags.water_pet) {
+            pet_bulb.health = 0;
+        }
+
+        if (pflags.too_hot) {
+
+        }
     }
 }
 
+/*
+ * Periodic timer responsible for losing health over time and increasing game counter
+ */
+Void CLK_TSK_game_timer()
+{
+    pflags.subtract_health = 1;
+    ++game_counter;
+}
 
+/*
+ * Feeds pet when you press this button.
+ */
+Void BTN1_BP_Callback()
+{
+    pflags.feed_pet = 1;
+}
 
+Void BTN2_BP_Callback()
+{
+    pflags.water_pet = 1;
+}
+
+Void CLK_TSK_disp_timer()
+{
+    Semaphore_post(SEMHDL_update_LCD);
+}
 /*************************************************************/
 /*              Display Task                                 */
 /*************************************************************/
 Void TSK_draw_screen()
+{
+    while (1) {
+        Semaphore_pend(SEMHDL_update_LCD, BIOS_WAIT_FOREVER);
+        draw_HUD();
+        draw_bubble();
+        draw_pet();
+    }
+}
+
+/*
+ * Height is 0 to 10 pixels
+ * Width is full screen [ 0 , 127 ]
+ */
+void draw_HUD()
+{
+
+}
+
+void draw_bubble()
+{
+
+}
+
+void draw_pet()
 {
 
 }

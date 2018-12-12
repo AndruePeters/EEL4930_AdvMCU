@@ -292,6 +292,12 @@ project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grli
 project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h
 project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/lotr_tree_splash_screen.h
 project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h
+project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/broken_bulb.h
+project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h
+project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/bulb_inverse.h
+project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h
+project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/lightbulb.h
+project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h
 project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/board_config/Board.h
 project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/board_config/MSP_EXP432P401R.h
 project6.obj: C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/custom_driver/accelerometer.h
@@ -591,6 +597,12 @@ C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/LcdDriver/Crystalfontz128x1
 C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/lotr_tree_splash_screen.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/broken_bulb.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/bulb_inverse.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h: 
+C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/img/lightbulb.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/ti/grlib/grlib.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/board_config/Board.h: 
 C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/board_config/MSP_EXP432P401R.h: 

@@ -38,6 +38,9 @@
 
 // image for splash screen
 #include <img/lotr_tree_splash_screen.h>
+#include <img/broken_bulb.h>
+#include <img/bulb_inverse.h>
+#include <img/lightbulb.h>
 
 /* Board Header file */
 #include "board_config/Board.h"
@@ -80,8 +83,8 @@ struct pet_flags {
     uint8_t feed_pet;
     uint8_t water_pet;
     uint8_t subtract_health;
-    uint8_t add_health;
     uint8_t game_won;
+    uint8_t too_hot;
 };
 
 
@@ -94,14 +97,19 @@ struct MsgSensorObj {
     float temp;
 };
 
+struct MsgDispObj {
+    int32_t health;
+    char comment[40];
+};
+
 Mailbox_Struct MBX_STR_sensors;
 Mailbox_Handle MBX_HDL_sensors;
 struct MsgSensorObj mbx_sensor_buff[NUM_MSGS];
 /* Task stuff */
 
-/*
- * Update Sensor Task
- */
+/*************************************************************/
+/*              Sensor Task                                  */
+/*************************************************************/
 Task_Handle TSK_HDL_read_sensors;
 char TSK_STK_read_sensors[SENSOR_TSK_SIZE];
 
@@ -118,30 +126,48 @@ Void TSK_read_sensors();
 float TEMP_get();
 
 
-/*
- * Game Logic Task
- */
+/*************************************************************/
+/*              Main Game Logic                              */
+/*************************************************************/
+struct pet_flags pflags;
+struct pet pet_bulb;
 
+uint32_t game_counter;
 Task_Handle TSK_HDL_pet_game;
 char TSK_STK_pet_game[GAME_TSK_SIZE];
 
 Void TSK_play_game();
 
-/*
- * Update Display Task
- */
+Clock_Handle CLK_HDL_game_timer;
+Void CLK_TSK_game_timer();
 
+Void BTN1_BP_Callback();
+Void BTN2_BP_Callback();
+
+/*************************************************************/
+/*              Display Task                                 */
+/*************************************************************/
 Task_Handle TSK_HDL_draw_screen;
 char TSK_STK_draw_screen[DISP_TSK_SIZE];
+
+Clock_Handle CLK_HDL_disp_timer;
+Void CLK_TSK_disp_timer();
+
+Semaphore_Struct SEMSTRUCT_update_LCD;
+Semaphore_Handle SEMHDL_update_LCD;
 
 /*
  * Responsible for drawing to the screen
  */
 Void TSK_draw_screen();
-/*
- * Mailboxes
- */
 
+/*
+ * Draws HUD
+ */
+void draw_HUD();
+void draw_bubble();
+void draw_pet();
+Void LCD_init();
 
 
 #endif /* PROJECT6_H_ */
