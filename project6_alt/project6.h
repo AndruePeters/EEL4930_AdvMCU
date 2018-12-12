@@ -54,7 +54,29 @@
 // analysis shows no task needs more than 1000 bytes
 #define SENSOR_TSK_SIZE   1000
 #define GAME_TSK_SIZE 1000
+#define DISP_TSK_SIZE 1000
 #define NUM_MSGS 1
+
+
+
+/*
+ * Holds general information for a "pet"
+ */
+
+struct pet {
+    int32_t health;
+    int32_t health_max;
+
+    Graphics_Image* pet_img;
+    Graphics_Image* pet_inverse_img;
+
+    uint8_t img_ht;
+    uint8_t img_wdt;
+    uint8_t x_coord;
+    uint8_t y_coord;
+};
+
+
 /*
  * Mailbox stuff
  */
@@ -96,10 +118,18 @@ Task_Handle TSK_HDL_pet_game;
 char TSK_STK_pet_game[GAME_TSK_SIZE];
 
 Void TSK_play_game();
+
 /*
  * Update Display Task
  */
 
+Task_Handle TSK_HDL_draw_screen;
+char TSK_STK_draw_screen[DISP_TSK_SIZE];
+
+/*
+ * Responsible for drawing to the screen
+ */
+Void TSK_draw_screen();
 /*
  * Mailboxes
  */

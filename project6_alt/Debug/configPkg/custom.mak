@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/project6_pem4f.xdl
-	$(SED) 's"^\"\(package/cfg/project6_pem4fcfg.cmd\)\"$""\"/Users/druepeters/Documents/Development/EEL4930_AdvMCU/project6_alt/Debug/configPkg/\1\""' package/cfg/project6_pem4f.xdl > $@
+	$(SED) 's"^\"\(package/cfg/project6_pem4fcfg.cmd\)\"$""\"C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/Debug/configPkg/\1\""' package/cfg/project6_pem4f.xdl > $@
 	-$(SETDATE) -r:max package/cfg/project6_pem4f.h compiler.opt compiler.opt.defs

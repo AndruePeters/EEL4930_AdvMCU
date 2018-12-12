@@ -45,6 +45,14 @@ int main(void)
     tp.priority = 1;
     TSK_HDL_pet_game = Task_create(TSK_play_game, &tp, NULL);
 
+    /*
+     * Task properties for display task
+     */
+    tp.stackSize = DISP_TSK_SIZE;
+    tp.stack = &TSK_STK_draw_screen;
+    tp.priority = 1;
+    TSK_HDL_draw_screen = Task_create(TSK_draw_screen, &tp, NULL);
+
 
     Mailbox_Params mbx_params;
     Mailbox_Params_init(&mbx_params);
@@ -90,7 +98,7 @@ Void TSK_read_sensors()
     static struct accelerometer prev_accel;
     static struct JS js;
     static float temperature;
-    static MsgSensorObj msg;
+    static struct MsgSensorObj msg;
 
     // initialize curr_accel and prev_accel
     curr_accel = ACCEL_get();
@@ -119,6 +127,7 @@ float TEMP_get()
     UInt key = Hwi_disable();
     t = TMP006_getTemp();
     Hwi_restore(key);
+    return t;
 }
 
 
@@ -127,7 +136,7 @@ float TEMP_get()
 /*************************************************************/
 Void TSK_play_game()
 {
-    static MsgSensorObj msg_sensors;
+    static struct MsgSensorObj msg_sensors;
 
     while (1) {
 
@@ -136,4 +145,13 @@ Void TSK_play_game()
 
         }
     }
+}
+
+
+/*************************************************************/
+/*              Display Task                                 */
+/*************************************************************/
+Void TSK_draw_screen()
+{
+
 }

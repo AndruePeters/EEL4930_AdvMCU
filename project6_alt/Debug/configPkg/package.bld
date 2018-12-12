@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: '/Users/druepeters/Documents/Development/EEL4930_AdvMCU/project6_alt/project6.cfg',
+        cfgScript: 'C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/project6.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../project6.cfg',
-    outputPath: '/Users/druepeters/Documents/Development/EEL4930_AdvMCU/project6_alt/Debug/configPkg',
+    outputPath: 'C:/Users/druep/Documents/EEL4930_AdvMCU/project6_alt/Debug/configPkg',
     exeName:    'project6' + suffix,
     exeIntName: 'project6' + suffix.replace('.', '_'),
     targ:       targ,

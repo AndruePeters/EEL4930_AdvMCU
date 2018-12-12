@@ -1,6 +1,6 @@
 #
 # This file was generated based on the configuration script:
-#     /Users/druepeters/Documents/Development/EEL4930_AdvMCU/project6_alt/project6.cfg
+#     C:\Users\druep\Documents\EEL4930_AdvMCU\project6_alt\project6.cfg
 #
 # This makefile may be included in other makefiles that need to build
 # the libraries containing the compiled source files generated as
@@ -14,7 +14,7 @@
 #
 # The absolute path to the generated source directory (at the time the
 # sources were generated) is:
-#    /Users/druepeters/Documents/Development/EEL4930_AdvMCU/project6_alt/src
+#    C:\Users\druep\Documents\EEL4930_AdvMCU\project6_alt\src
 #
 GEN_SRC_DIR ?= ../src
 
