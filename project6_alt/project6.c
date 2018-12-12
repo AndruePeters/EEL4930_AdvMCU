@@ -275,8 +275,8 @@ Void TSK_draw_screen()
 {
     struct MsgDispObj msg;
     char health[5];
-    Graphics_Rectangle blank = {0, 0, 99, 10};
-    Graphics_Rectangle health = blank;
+    struct Graphics_Rectangle blank = {0, 0, 99, 10};
+    struct Graphics_Rectangle health_rect = blank;
     Graphics_drawImage(&g_sContext, &lotr_tree_splash_screen_img, 0, 0);
     Task_sleep(5000);
     Graphics_clearDisplay(&g_sContext);
@@ -292,7 +292,7 @@ Void TSK_draw_screen()
         /*
          * Draw HUD
          */
-        Graphics_fillRectangle()
+        //Graphics_fillRectangle()
         draw_HUD();
         draw_bubble();
         draw_pet();
